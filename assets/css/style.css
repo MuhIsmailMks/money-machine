@@ -66,6 +66,10 @@ body{
   color: #A3D6D0;
 }
 
+.menu-list a.active{
+  border: 2px solid #305473;
+}
+
 /* hero */
 .hero .title{
   text-shadow: -1px 0 white, 0 15px white, 1px 0 white, 0 -1px white;
