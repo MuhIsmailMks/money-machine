@@ -58,7 +58,8 @@ body{
 
   transition: .3s ease-in-out;
 
-  color: #305473;
+  color: #472A1A; 
+  /* color: #BF8C4B; */
 }
 
 .menu-list a:hover{
@@ -67,7 +68,8 @@ body{
 }
 
 .menu-list a.active{
-  border: 2px solid #305473;
+  border: 2px solid #472A1A;
+  /* border: 2px solid #BF8C4B; */
 }
 
 /* hero */
@@ -124,7 +126,7 @@ body{
 
 /* footer */
 footer{
-  background: linear-gradient(180deg, rgba(48, 84, 115, 1) 22%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(180deg, #a77d44 22%, rgba(255, 255, 255, 1) 100%);
 }
 
 footer a,
