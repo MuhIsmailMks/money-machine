@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            if (pageYOffset >= sectionTop - sectionHeight / 2) {
+            if (pageYOffset >= sectionTop - sectionHeight / 5) {
                 current = section.getAttribute("id");
             }
         });
