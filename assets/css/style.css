@@ -74,6 +74,10 @@ body{
 }
 
 /* hero */
+.shadow_title{
+  text-shadow: -1px 0 black, 0 9px black, 1px 0 black, 0 -1px black;
+}
+
 .hero .title{
   text-shadow: -1px 0 black, 0 15px black, 1px 0 black, 0 -1px black;
 }
@@ -154,6 +158,13 @@ body{
 .token._3 {
   rotate: 10deg;
 }
+ 
+.token._1:hover,
+.token._2:hover,
+.token._3:hover,
+.token._4:hover{
+  rotate: 0deg;
+}
 
 .token._2 ,
 .token._4 {
@@ -171,6 +182,11 @@ body{
 }
 .token._4 .icon div{
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(230, 209, 209, 1) 100%);
+}
+
+.token:hover{
+  rotate: 0 !important;
+  cursor: pointer;
 }
 
 .token{
@@ -314,6 +330,10 @@ footer .social a:hover{
   }
  
   /* hero */
+  .shadow_title{
+    text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+  }
+
   .hero .title{
     text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
   }
