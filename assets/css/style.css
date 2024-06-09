@@ -79,7 +79,7 @@ body{
 }
 
 .left_right_animation{
-  animation: animated 5s linear infinite;
+  animation: animated 10s linear infinite;
 }
 
 @keyframes animated {
@@ -87,10 +87,10 @@ body{
     transform: translateX(0%);
   }
   20%{
-    transform: translateX(3%);
+    transform: translateX(15%);
   }
   70%{
-    transform: translateX(-3%);
+    transform: translateX(-15%);
   }
 }
 
