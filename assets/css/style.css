@@ -501,3 +501,21 @@ footer .social a:hover{
       transform: translate3d(var(--left-end), 190vh, 0);
   }
 }
+
+/* animation */
+.float_animation{
+  animation: float 2s ease-in-out infinite;
+}
+/* float */
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% { 
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+  }
+  
