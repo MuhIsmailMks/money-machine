@@ -1,3 +1,5 @@
+AOS.init()
+
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".section_links");
