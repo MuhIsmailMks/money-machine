@@ -135,6 +135,13 @@ footer p{
   font-family: "Montserrat", sans-serif;
 }
 
+.text_about_footer,
+footer .link h3,
+footer .link a{
+  text-shadow: .3px .5px 0 white;
+  font-weight: 600;
+}
+
 footer .social a:hover{
   scale: 1.1;
 }
