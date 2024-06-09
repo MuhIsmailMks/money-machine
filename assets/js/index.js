@@ -1,4 +1,7 @@
-AOS.init()
+// aos
+AOS.init({
+    once: true
+})
 
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
