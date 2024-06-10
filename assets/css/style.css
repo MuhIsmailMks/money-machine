@@ -308,6 +308,11 @@ footer .social a:hover{
 /* union */
 .union{
   animation: union 2s linear infinite;
+  rotate: -10deg;
+}
+
+.union:hover{
+  rotate: 0deg;
 }
 
 
