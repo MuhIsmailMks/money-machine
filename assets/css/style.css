@@ -324,6 +324,19 @@ footer .social a:hover{
     transform: translateY(-15px);
 }
 }
+
+.zoom_animation{
+  animation: zoom_animation 15s linear infinite;
+}
+
+@keyframes zoom_animation {
+  0%,100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+}
  
 
 /* media queries */
