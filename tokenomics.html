@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- scroll effect cdn --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- style css -->
+     <link rel="stylesheet" href="style.css">
+    <title>NARTO</title>
+
+</head>
+<body>
+    <div class="w-full h-full overflow-hidden relative">
+        
+        <div class="w-full relative h-[90px] lg:h-[100px] flex justify-end items-center px-[1.5rem] lg:px-[2rem]">
+            <a href="index.html" class="bg-[#3A80FE] text-outlineBlack-thin px-2 rounded-full flex items-center gap-3 border-[5px] border-black [box-shadow:-4px_6px_0px_#000000] text-white transition-all duration-300 hover:shadow-none cursor-pointer">
+                <span class="px-6 py-2 xl:py-0.3 text-[18px] sm:text-[20px] leading-[1] md:text-[24px] xl:text-[32px]">HOME</span>
+            </a>
+        </div> 
+
+        <!-- hero -->
+        <section class="bg-[#E1ECF7] pb-0 pt-[60px]  md:pt-[0] lg:pt-[40px] w-full overflow-hidden">
+            <div class="container">
+                <div class="pt-[2rem] xl:pl-[3rem] lg:pt-[4rem] inline-block"><img src="./icons/closed.svg" class="mx-auto mb-3" alt="">
+                    <div
+                        class="flex items-center gap-3 bg-white pl-4 xs:pl-6 pr-1 xs:pr-3 py-1 xs:py-2 rounded-full border-[3px] border-black mb-[2rem]">
+                        <input type="text"
+                            class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:fo text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                            value="0x5D639027789BD9D53c1a32dc1Cb18E6f1A16234c" fdprocessedid="h8xv45">
+                        <div
+                            class="copy-btn text-sm sm:text-[16px] md:text-[18px] xl:text-[20px] text-black px-4 xs:px-6 py-1 xs:py-2 rounded-full bg-[#3A80FE] border-[3px] border-black cursor-pointer transition-all duration-300 hover:scale-[1.1]">
+                            COPY</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full relative">
+                <div class="flex lg:hidden justify-between px-[1rem] px-[2rem] relative z-[1]">
+                    <div class="text-center flex-shrink-0">
+                        <h5
+                            class="text-[.85rem] sm:text-[1rem] md:text-[1.125rem] text-[#3A80FE] text-outlineBlack-thin [text-shadow:-4px_3px_0px_#000000] text-center uppercase inline-block flex-shrink-0 w-full mb-2">
+                            JUST LAID</h5>
+                        <div class="relative"><img src="./images/$narto_hinata.png"
+                                class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
+                            <div class="h-[85px] w-[3px] rounded-full bg-black inline-block "></div>
+                        </div>
+                    </div>
+                    <div class="text-center flex-shrink-0">
+                        <h5
+                            class="text-[.85rem] sm:text-[1rem] md:text-[1.125rem] text-[#3A80FE] text-outlineBlack-thin [text-shadow:-4px_3px_0px_#000000] text-center uppercase inline-block flex-shrink-0 w-full mb-2">
+                            INCUBATING</h5>
+                        <div class="relative"><img src="./images/$narto_hinata.png"
+                                class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
+                            <div class="h-[85px] w-[3px] rounded-full bg-black inline-block "></div>
+                        </div>
+                    </div>
+                    <div class="text-center flex-shrink-0">
+                        <h5
+                            class="text-[.85rem] sm:text-[1rem] md:text-[1.125rem] text-[#3A80FE] text-outlineBlack-thin [text-shadow:-4px_3px_0px_#000000] text-center uppercase inline-block flex-shrink-0 w-full mb-2">
+                            HATCHING</h5>
+                        <div class="relative"><img src="./images/$narto_hinata.png"
+                                class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
+                            <div class="h-[85px] w-[3px] rounded-full bg-black inline-block "></div>
+                        </div>
+                    </div>
+                    <div class="text-center flex-shrink-0">
+                        <h5
+                            class="text-[.85rem] sm:text-[1rem] md:text-[1.125rem] text-[#3A80FE] text-outlineBlack-thin [text-shadow:-4px_3px_0px_#000000] text-center uppercase inline-block flex-shrink-0 w-full mb-2">
+                            TIME TO FLY</h5>
+                        <div class="relative"><img src="./images/$narto_hinata.png"
+                                class=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" alt="">
+                            <div class="h-[85px] w-[3px] rounded-full bg-black inline-block "></div>
+                            <div class="top-[140%] md:top-[150%] lg:top-[160%] absolute -left-[6rem] min-w-[180px]"><img
+                                    src="./images/$narto_hinata.png"
+                                    class="xs:block hidden absolute left-1/2 md:left-[45%] lg:left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 w-[80%] md:w-[90%] lg:w-full -scale-x-[1]"
+                                    alt=""><img src="./../images/asasffs 1.png"
+                                    class="absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 xs:hidden w-[88%] -scale-x-[1]"
+                                    alt="">
+                                <div class="inline-block relative py-2 xl:!py-4 px-3 xl:!px-4"><span
+                                        class="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px]">$12,500,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><img src="./images/Group.webp"
+                    class="w-full absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 lg:hidden" alt="">
+            </div>
+            <div class="container">
+                <img src="./images/$narto_kakashi.png" class="mx-auto lg:hidden" alt="">
+            </div>
+            <img src="./images/Group.webp" class="w-full lg:hid object-cover" alt="">
+        </section>
+
+        <!-- CHICKENOMICS -->
+        <section class="bg-[#A6C2FA] py-[3rem]">
+            <h2 class="text-[2rem] md:text-[2.5rem] lg:text-[4rem] xl:text-[4.5rem] text-white text-outlineBlack [text-shadow:-4px_6px_0px_#000000] text-center mb-[2rem]" data-aos="fade-up">
+                CHICKENOMICS</h2>
+                
+            <div class="container mx-auto">
+                <div
+                        class="p-[2rem] mx-auto xs:p-[3rem] rounded-[40px] bg-white max-w-[95%] border-[2px] border-black [box-shadow:-4px_6px_0px_#000000] relative">
+                        <h2
+                            class="text-[32px] md:text-[38px] text-[#3A80FE] text-outlineBlack [text-shadow:-4px_6px_0px_#000000] mb-4 text-center lg:hidden">
+                            Presale Breakdown</h2>
+                        <div class="flex items-center justify-between flex-col md:flex-row">
+                            <div class="lg:w-[50%] flex items-center justify-center mb-3">
+                                <div class="w-full ss:!w-[350px]">
+                                    <div class="w-full lg:justify-end lg:pr-[3rem] flex relative">
+                                        <canvas  id="donutChart" height="100" width="100" class="max-w-[300px] lg:max-w-[400px] max-h-[300px] lg:max-h-[400px]"
+                                       >
+                                        </canvas>
+                                        <div
+                                            class="absolute w-full h-full rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent z-[1]">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-auto lg:w-[50%]">
+                                <h2
+                                    class=" text__64 text-[#3A80FE] text-outlineBlack [text-shadow:-4px_6px_0px_#000000] mb-3 lg:block hidden">
+                                    Presale Breakdown</h2>
+                                <div class="grid grid-cols-1 gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="flex-shrink-0 w-[14px] h-[14px] rounded-full bg-[#7B90FF] border-[2px] !border-Mblack">
+                                        </div>
+                                        <p class="text__18">50% of Raise to LP</p>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="flex-shrink-0 w-[14px] h-[14px] rounded-full bg-[#FFDD71] border-[2px] !border-Mblack">
+                                        </div>
+                                        <p class="text__18">50% of Raise for expenses/development/distribution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- WHO IS -->
+        <section class="bg-[#E1ECF7] mt-[80px]">
+            <div class="xl:px-[4rem] flex flex-col items-center w-full">
+
+                <div
+                    class="px-[1.5rem] sm:px-[3rem] pt-[1.5rem] sm:pt-[3rem] pb-0 lg:!pb-[3rem]  rounded-[40px] bg-[#A6C2FA] w-[90%] xl:w-[80%] xl:max-w-[1100px] border-[2px] border-black  [box-shadow:-4px_6px_0px_#000000] relative mb-[2rem]">
+                    <div class="row">
+                        <div class="text-center lg:!text-left">
+                            <h2 class=" text-[32px] md:text-[38px] lg:text-[40px] xl:text-[64px] text-white text-outlineBlack [text-shadow:-4px_6px_0px_#000000] mb-4" data-aos="fade-right">WHO IS
+                                NARTO?</h2>
+                            <p
+                                class="text-[20px] xs:text-[24px] md:text-[28px] lg:text-[32px] text-outlineBlack xl:text-[40px] text-[white] leading-tight lg:w-[60%] xl:w-[600px]" data-aos-delay="100" data-aos="fade-right">
+                                one uf the bes sellin manga uf oll time made its debut on shitcuin availabul on Solanu. we drem to become hukage of Solanu Datebayuuuuu  !!
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./images/$narto_sticker 9.png"
+                        class="relative left-1/2 lg:left-auto -translate-x-1/2 lg:translate-x-0 w-[130%] max-w-[130%] lg:max-w-full  lg:w-[300px] mt-[1.5rem] lg:!mt-0 lg:!absolute mx-auto lg:!mx-0 lg:right-[0] xl:!right-[-2rem] bottom-0 xl:!h-full  xl:w-auto"
+                        alt="">
+                </div>
+               
+                <div
+                    class="p-[2rem]  w-[90%] xl:w-[80%] xl:max-w- xs:p-[3rem] rounded-[40px] bg-white xl:max-w-[1100px] border-[2px] border-black [box-shadow:-4px_6px_0px_#000000] relative">
+                   
+                    <h2 class="text-[32px] md:text-[38px] text-center text-white text-outlineBlack [text-shadow:-4px_6px_0px_#000000] mb-4 lg:hidden">
+                        TOP 10 CONTRIBUTORS
+                    </h2>
+
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <div class="my-auto xl:w-[50%] col-xl-6 col-lg-7">
+                            <div class="w-full relative">
+                                <canvas role="img" height="191" width="191"
+                                    style="display: block; box-sizing: border-box; height: 191px; width: 191px;">
+                                </canvas>
+                                <div
+                                    class="absolute w-full h-full rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent z-[1]">
+                                </div><img src="./images/$narto_naruto.png"
+                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] md:w-auto xs:w-[130px] ss:w-[110px] w-[95px] w-[80px]"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 xl:w-[40%]">
+                            <h2
+                                class="text__64 text-white text-outlineBlack [text-shadow:-4px_6px_0px_#000000] mb-4 lg:block hidden">
+                                TOP 10 CONTRIBUTORS</h2>
+                            <div class="flex flex-wrap gap-3 mt-[2rem] lg:mt-[0]">
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(123, 144, 255);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xec240a8949422bb9e41c7de6fe247540655f5b2f" fdprocessedid="wfsv1j">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(123, 200, 255);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xf8686f2ae1e27f2a27ebf9f9561c55df6e5b7a23" fdprocessedid="a9myd">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(255, 72, 82);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0x975ccbb6e81078063f579bf587c8bbd750b088bd" fdprocessedid="41aq1j">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(255, 221, 113);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xbd49829aa9ceb5269444d4778ff2188f5ca338e2" fdprocessedid="poajgw">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(165, 239, 121);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xca8898aa087bff3ffc181489518fbb3ab3c09312" fdprocessedid="lpygii">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(123, 144, 255);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xf80642eb48d9e4ab64053690aa4f6e96254451ce" fdprocessedid="5k0ir7">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(123, 200, 255);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0x0164e187fdb5876633963a35d00b4f354df1a84e" fdprocessedid="4uyaq">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(255, 72, 82);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xd18327bb6d6de9241bed63bb5e78459325fbbd70" fdprocessedid="zqnmrl">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(255, 221, 113);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xc99fab9b1b575939ae5f020c27861584902ac1f9" fdprocessedid="7s12ua">
+                                </div>
+                                <div class="w-full flex items-center gap-2">
+                                    <div class="w-[20px] sm:w-[28px] h-[20px] sm:h-[28px] rounded-full border-[2px] !border-[#000000] flex-shrink-0 "
+                                        style="background-color: rgb(165, 239, 121);"></div><input type="text"
+                                        class="w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none text-[16px] md:text-[18px] lg:text-[20px] font-Varela"
+                                        value="0xdd5e3a4793231fdc3a56059167f9f723131e3840" fdprocessedid="u6tfw8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+        </section>
+
+
+    </div> 
+
+        
+    </div>
+
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        // chart js
+
+        let data = { 
+            datasets: [{
+                data: [50, 50],
+                backgroundColor: ["#7B90FF", "#FFDD71"],
+                hoverBackgroundColor: ["#7B90FF", "#FFDD71"]
+            }]
+        };
+        
+        let ctx = document.getElementById("donutChart").getContext('2d');
+        let myDonutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            borderWidth: 111,
+            options: { 
+            }
+        });
+
+    </script>
+</body>
+</html>
