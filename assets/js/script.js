@@ -60,8 +60,8 @@ function randomizeImage() {
     const displayedImage = document.getElementById('displayedImage');
     const bgimage = document.querySelector('#imageContainer .bg'); 
     const imageLoader = document.querySelector('#imageContainer .loading-image'); 
-    const downloadButton = document.getElementById('downloadButton'); 
-    const downloadLink = document.getElementById('downloadLink');
+    // const downloadButton = document.getElementById('downloadButton'); 
+    // const downloadLink = document.getElementById('downloadLink');
     const loadingAudio = document.getElementById('loadingAudio'); 
     const randomizeButton = document.getElementById('randomizeButton');
  
@@ -80,14 +80,14 @@ function randomizeImage() {
             bgimage.style.display = 'none';   
             imageLoader.style.display = 'none'; 
             loadingAudio.style.display = 'none'; 
-            downloadButton.style.display = 'block';
+            // downloadButton.style.display = 'block';
             randomizeButton.disabled = false;
         };
         // set background music
 
         // set false elemnt
         displayedImage.src = randomImage;
-        downloadLink.href = randomImage;
+        // downloadLink.href = randomImage;
         loadingAudio.muted = true; 
     }, 2000);  
 }
@@ -95,7 +95,7 @@ function randomizeImage() {
 
 
 
-function downloadImage() {
+function downloadImage() { 
     const displayedImage = document.getElementById('displayedImage');
     const downloadLink = document.createElement('a');
     downloadLink.href = displayedImage.src;
