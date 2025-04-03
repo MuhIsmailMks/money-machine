@@ -5,19 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/favicon2.png" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jua&family=Rammetto+One&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- AOS scroll effect cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
@@ -27,9 +20,7 @@
 
   <body class="flex justify-center">
 
-    <div
-      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-10 lg:gap-[80px] "
-    >
+    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-10 lg:gap-[80px] z-10" >
 
       <!-- logo -->
       <div
@@ -276,11 +267,24 @@
       <section id="HowToBuy" class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]">
 
         <div class="howto flex_center flex-col w-full relative gap-4">
+
+          <!-- title -->
           <h2 class="carumba_font text-[70px] lg:text-[110px] bold_shadow">
             How To Buy
           </h2>
 
+          <!-- sticker -->
+           <div class="sticker1 relative xl:absolute xl:left-[3%] min-[1500px]:left-[10%] w-[70%] md:w-[360px] flex_center ">
+             <img src="./assets/images/sticker1.gif" alt="sticker" class="w-full h-auto object-contain">
+           </div>
+
+           <div class="sticker2 max-xl:hidden absolute right-[3%] min-[1500px]:right-[10%] w-[360px] flex_center ">
+             <img src="./assets/images/sticker1.gif" alt="sticker" class="w-full h-auto object-contain">
+           </div>
+
+          <!-- how to content -->
           <div class="w-[90%] h-auto sm:w-[400px] lg:w-[400px] relative">
+
             <!-- bg -->
             <div class="bg w-full h-auto relative">
               <img
@@ -292,33 +296,40 @@
 
             <!-- how to content -->
             <div
-              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[4vw] text-[22px] lg:text-[25px] flex flex-col gap-7 leading-[1]"
+              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[4vw] text-[22px] lg:text-[25px] flex flex-col gap-10 leading-[1]"
             >
               <p>
-                <span class="font-semibold text-[40px] lg:text-[32px]"
+                <span class="font-semibold text-[36px] lg:text-[32px]"
                   >1 :</span
                 >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Create a Wallet (e.g Metamask)
               </p>
               <p>
-                <span class="font-semibold text-[40px] lg:text-[32px]"
+                <span class="font-semibold text-[36px] lg:text-[32px]"
                   >2 :</span
                 >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Add BNB to your wallet
               </p>
               <p>
-                <span class="font-semibold text-[40px] lg:text-[32px]"
+                <span class="font-semibold text-[36px] lg:text-[32px]"
                   >3 :</span
                 >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Copy and paste the contract address in the widget.
               </p>
               <p>
-                <span class="font-semibold text-[40px] lg:text-[32px]"
+                <span class="font-semibold text-[36px] lg:text-[32px]"
                   >4 :</span
                 >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Swap BNB for $MAGIC
               </p>
+              <p>
+                <span class="font-semibold text-[20px] lg:text-[22px]">We recommend setting your slippage to at least 2%</span
+                > 
+              </p>
+
             </div>
+
+
           </div>
 
           <div
@@ -426,6 +437,28 @@
       </footer>
 
     </div>
+
+    <!-- bg -->
+     <div class="w-full h-full fixed left-0 top-0 bg-[#fff]">
+         <img id="bgImage" src="./assets/images/bg.webp" alt="" class="w-full h-full object-cover opacity-70">
+
+         <div class="absolute z-10 left-[9%] top-[8%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -1s;">
+          <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-12 ">
+         </div>
+         <div class="absolute z-10 right-[16%] top-[15%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -1.5s;">
+          <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-[-20deg] ">
+         </div>
+         <div class="absolute z-10 left-[32%] top-[48%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -2.6s;">
+          <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-[-50deg]">
+         </div>
+         <div class="absolute z-10 left-[3%] top-[78%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -.6s;">
+          <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-[-30deg] ">
+         </div>
+         <div class="absolute z-10 right-[3%] top-[68%] w-[20%] xl:w-[150px] float_animation">
+          <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-[-10deg] ">
+         </div>
+
+     </div>
 
     <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

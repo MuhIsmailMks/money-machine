@@ -3,17 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         once: true,
-    });
-
-    // nav handler
-    const menu_btn = document.querySelector('nav .menu-button');
-    const menu_container = document.querySelector('nav .menu_container');
-
-    menu_btn.addEventListener('click', () => {
-        menu_btn.classList.toggle('active')
-        menu_container.classList.toggle('active')
-    })
-
+    }); 
 
     // const items = document.querySelectorAll('.wrapper .item');
     // const totalItems = items.length; 
@@ -25,6 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // });
 
 
+    const images = [
+        "./assets/images/bg.webp",
+        "./assets/images/bg2.webp",
+        "./assets/images/bg3.webp",
+        "./assets/images/bg4.webp"
+    ];
+
+    let currentIndex = 0;
+    const imageElement = document.getElementById("bgImage");
+
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length; 
+
+        setTimeout(() => {
+            imageElement.src = images[currentIndex];  
+            imageElement.style.opacity = "0.7";  
+        }, 1000);
+    }
+
+    setInterval(changeBackground, 800); 
 });
 
 // copy address

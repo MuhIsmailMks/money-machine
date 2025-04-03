@@ -14,8 +14,8 @@
   font-display: swap;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 .carumba_font {
@@ -35,54 +35,71 @@ html{
 .flex_between {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
-.mirrorY{
-    transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    -moz-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
+.mirrorY {
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
 }
 
-.mirrorX{
-    transform: scaleY(-1);
-    -webkit-transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
+.mirrorX {
+  transform: scaleY(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
 }
 
-body{
-    font-family: "comic", sans-serif;
+body {
+  font-family: "comic", sans-serif;
 }
 
-.bold_shadow{
-    text-shadow: 0 5px 3px #EBBA30;
+.bold_shadow {
+  text-shadow: 0 5px 3px #ebba30;
 }
 
-.box_shadow{
-    box-shadow: 0 5px 0 black;
+.box_shadow {
+  box-shadow: 0 5px 0 black;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 /* how */
-.btns .btnHow{
-    transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -ms-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
+.btns .btnHow {
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
 }
 
-.btns .btnHow:hover{
-   transform: scale(1.05);
-   -webkit-transform: scale(1.05);
-   -moz-transform: scale(1.05);
-   -ms-transform: scale(1.05);
-   -o-transform: scale(1.05);
+.btns .btnHow:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/* animation */
+.float_animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
