@@ -15,25 +15,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // });
 
 
-    const images = [
-        "./assets/images/bg1.png",
-        "./assets/images/bg2.png", 
-        "./assets/images/bg3.png" 
-    ];
+    // const images = [
+    //     "./assets/images/bg1.png",
+    //     "./assets/images/bg2.png", 
+    //     "./assets/images/bg3.png" 
+    // ];
 
-    let currentIndex = 0;
-    const imageElement = document.getElementById("bgImage");
+    // let currentIndex = 0;
+    // const imageElement = document.getElementById("bgImage");
 
-    function changeBackground() {
-        currentIndex = (currentIndex + 1) % images.length; 
+    // function changeBackground() {
+    //     currentIndex = (currentIndex + 1) % images.length; 
 
-        setTimeout(() => {
-            imageElement.src = images[currentIndex];  
-            imageElement.style.opacity = "0.7";  
-        }, 1000);
-    }
+    //     setTimeout(() => {
+    //         imageElement.src = images[currentIndex];  
+    //         imageElement.style.opacity = "0.7";  
+    //     }, 1000);
+    // }
 
-    setInterval(changeBackground, 800); 
+    // setInterval(changeBackground, 800); 
 });
 
 // copy address
