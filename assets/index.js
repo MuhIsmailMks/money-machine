@@ -16,10 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const images = [
-        "./assets/images/bg.webp",
-        "./assets/images/bg2.webp",
-        "./assets/images/bg3.webp",
-        "./assets/images/bg4.webp"
+        "./assets/images/bg1.png",
+        "./assets/images/bg2.png", 
+        "./assets/images/bg3.png" 
     ];
 
     let currentIndex = 0;

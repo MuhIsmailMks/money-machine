@@ -66,6 +66,10 @@ body {
   box-shadow: 0 5px 0 black;
 }
 
+.thin_stroke{
+  text-shadow: 0 2px 0 black;
+}
+
 li {
   list-style: none;
 }
