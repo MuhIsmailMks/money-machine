@@ -38,26 +38,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".stars-container");
     const starImage = "./assets/images/star.png"; 
 
-    for (let i = 0; i < 30; i++) { 
-        let star = document.createElement("img");
-        star.src = starImage;
-        star.classList.add("star");
- 
-        let x = Math.random() * window.innerWidth;
-        let y = Math.random() * window.innerHeight;
- 
-        let size = Math.random() * 30 + 5; 
- 
-        let duration = Math.random() * 2 + 1;
+   // Menentukan jumlah bintang berdasarkan ukuran layar
+   const starCount = window.innerWidth < 1000 ? 15 : 30;
 
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        star.style.left = `${x}px`;
-        star.style.top = `${y}px`;
-        star.style.animationDuration = `${duration}s`;
+   for (let i = 0; i < starCount; i++) { 
+       let star = document.createElement("img");
+       star.src = starImage;
+       star.classList.add("star");
 
-        container.appendChild(star);
-    }
+       let x = Math.random() * window.innerWidth;
+       let y = Math.random() * window.innerHeight;
+
+       let size = Math.random() * 30 + 5; 
+       let duration = Math.random() * 2 + 1;
+
+       star.style.width = `${size}px`;
+       star.style.height = `${size}px`;
+       star.style.left = `${x}px`;
+       star.style.top = `${y}px`;
+       star.style.animationDuration = `${duration}s`;
+
+       container.appendChild(star);
+   }
 
 });
 
