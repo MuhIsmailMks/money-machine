@@ -37,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.querySelector(".stars-container");
     const starImage = "./assets/images/star.png"; 
-
-   // Menentukan jumlah bintang berdasarkan ukuran layar
+ 
    const starCount = window.innerWidth < 1000 ? 15 : 30;
 
    for (let i = 0; i < starCount; i++) { 
