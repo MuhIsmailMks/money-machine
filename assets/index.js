@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".stars-container");
     const starImage = "./assets/images/star.png"; 
 
-    for (let i = 0; i < 100; i++) { 
+    for (let i = 0; i < 30; i++) { 
         let star = document.createElement("img");
         star.src = starImage;
         star.classList.add("star");
