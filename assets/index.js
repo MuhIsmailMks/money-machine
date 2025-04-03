@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let x = Math.random() * window.innerWidth;
         let y = Math.random() * window.innerHeight;
  
-        let size = Math.random() * 20 + 5; 
+        let size = Math.random() * 30 + 5; 
  
         let duration = Math.random() * 2 + 1;
 
