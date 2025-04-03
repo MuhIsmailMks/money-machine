@@ -115,35 +115,37 @@
 
       <!-- logo -->
       <div
-        class="relative md:absolute md:left-[40px] md:top-[20px] flex_center"
+        class="relative md:absolute md:left-[50px] md:top-[20px] flex_center max-lg:flex-col"
       >
         <img
           src="./assets/images/logo.png"
           alt="logo"
           class="w-[100px] h-auto object-contain rounded-full"
-        />
+        /> 
       </div>
 
+      <h1 class="carumba_font text-center text-[19vw]  bold_shadow leading-[1] md:hidden"> Magic Binance Coin</h1>
+
       <!-- nav -->
-       <div class="relative md:absolute md:right-[40px] md:top-[50px] flex_center gap-4 w-full md:w-[30%] text-[20px] max-lg:flex-wrap  ">
-          <li class="w-full lg:w-auto text-center">
+       <div class="relative md:absolute md:right-[40px] md:top-[50px] flex_center gap-4 w-full md:w-[30%] text-[30px] md:flex-col xl:flex-row  ">
+          <li class="text-center md:text-right md:w-full xl:w-auto">
             <a href="#home">Home</a>
           </li>
-          <li class="w-full lg:w-auto text-center">
+          <li class="text-center md:text-right md:w-full xl:w-auto">
             <a href="#about">About</a>
           </li>
-          <li class="w-full lg:w-auto text-center">
+          <li class="text-center md:text-right md:w-full xl:w-auto">
             <a href="#HowToBuy">How To Buy</a>
           </li> 
-          <li class="w-full lg:w-auto text-center">
+          <li class="text-center md:text-right md:w-full xl:w-auto">
             <a href="#social">Social</a>
           </li> 
        </div>
 
       <!-- hero -->
-      <section id="home" class="w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px]">
+      <section id="home" class="w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] md:pt-10">
 
-        <h1 class="carumba_font text-center text-[70px] md:text-[120px] bold_shadow leading-[1]"> Magic Binance Coin</h1>
+        <h1 class="carumba_font text-center text-[70px] md:text-[120px] bold_shadow leading-[1] max-md:hidden"> Magic Binance Coin</h1>
 
         <div class="w-[90%] md:w-[60%] xl:w-[65%] flex_center relative pt-2 lg:pt-[20px] pb-[10px]"  >
         <img
@@ -171,7 +173,7 @@
         />
 
         <div class="w-full h-full flex_center gap-7 z-10 relative ">
-          <p data-set="00000000000000000000000000" class="copy-box__text text-[14px] lg:text-[22px]">00000000000000000000000000</p>
+          <p data-set="00000000000000000000000000" class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[24px] lg:text-[32px]">00000000000000000000000000</p>
           <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
             <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
           </button>
@@ -192,7 +194,7 @@
           />
 
           <div
-            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
           >
             <p><span class="font-semibold">Supply : </span> 10 Million</p>
           </div>
@@ -208,7 +210,7 @@
           />
 
           <div
-            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
           >
             <p><span class="font-semibold">Tax : </span>0%</p>
           </div>
@@ -224,7 +226,7 @@
           />
 
           <div
-            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
           >
             <p><span class="font-semibold">LP : </span>Liquidity Burnt</p>
           </div>
@@ -252,7 +254,7 @@
                 <h2 class="carumba_font bold_shadow text-[110px] leading-[1]">
                   About
                 </h2>
-                <p>
+                <p class="text-[22px]">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
                   deleniti. Corrupti, soluta dolor numquam voluptatibus officiis modi
                   officia facilis necessitatibus quas consequuntur, impedit facere
@@ -301,34 +303,34 @@
 
             <!-- how to content -->
             <div
-              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[4vw] text-[22px] lg:text-[25px] flex flex-col gap-10 leading-[1] "
+              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[6vw] text-[29px] lg:text-[32px] flex flex-col gap-4 min-[400px]:gap-10 leading-[1] "
             >
               <p>
-                <span class="font-semibold text-[36px] lg:text-[32px] thin_stroke"
+                <span class="font-semibold text-[42px] lg:text-[32px]"
                   >1 :</span
                 >
                 Create a Wallet (e.g Metamask)
               </p>
               <p>
-                <span class="font-semibold text-[36px] lg:text-[32px]"
+                <span class="font-semibold text-[42px] lg:text-[32px]"
                   >2 :</span
                 >
                 Add BNB to your wallet
               </p>
               <p>
-                <span class="font-semibold text-[36px] lg:text-[32px]"
+                <span class="font-semibold text-[42px] lg:text-[32px]"
                   >3 :</span
                 >
                 Copy and paste the contract address in the widget.
               </p>
               <p>
-                <span class="font-semibold text-[36px] lg:text-[32px]"
+                <span class="font-semibold text-[42px] lg:text-[32px]"
                   >4 :</span
                 >
                 Swap BNB for $MAGIC
               </p>
               <p>
-                <span class="font-semibold text-[20px] lg:text-[22px]">We recommend setting your slippage to at least 2%</span
+                <span class="font-semibold text-[20px] lg:text-[32px] tracking-wide">We recommend setting your slippage to at least 2%</span
                 > 
               </p>
 
@@ -346,11 +348,11 @@
               $Buy
             </button>
 
-            <button
-              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white"
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xb961e90b10608cff90a76557a2e02e007fe2b062?t=1732027007888" target="_blank"
+              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white text-center"
             >
               Chart
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -428,7 +430,7 @@
           />
 
           <div class="w-full h-full flex_center gap-7 z-10 relative ">
-            <p data-set="00000000000000000000000000"  class="copy-box__text text-[14px] lg:text-[22px]">00000000000000000000000000</p>
+            <p data-set="00000000000000000000000000"  class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[24px] lg:text-[32px]">00000000000000000000000000</p>
             <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
               <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
             </button>
