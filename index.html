@@ -1,607 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/$narto_naruto.png"> 
-    <!-- swiper js -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AOS scroll effect cdn --> 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <!-- google fonts --> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Single+Day&display=swap" rel="stylesheet">
-    
-    <!-- style css -->
-     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>NARTO</title>
-</head>
-<body>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>New Web</title>
+  </head>
 
-      <!-- music -->
-        <audio  id="background-music" loop  >
-            <source src="./assets/videos/music.mp3" type="audio/mpeg"> 
-        </audio>
+  <body class="flex justify-center">
 
-              <!-- button event music -->
-      <div class="container-music w-[100px]  z-[9999] h-[200px] bottom-0 right-[1.5rem] md:right-[2rem] max-w-[100%] overflow-hidden fixed ">
-                <button id="toggle-music-btn" class="event-music  bottom-[30px] right-0 absolute w-[60px] h-[60px] bg-[#3A80FE] flex justify-center items-center rounded-full border-2 border-white">
-                    <img src="./assets/icons/sound.svg" alt="sound icon" class="w-[50%] h-auto object-contain">
-                    <span class="absolute h-[100%] w-[4px] bg-white rotate-45"></span>
-                </button>
+    <div
+      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-10 lg:gap-[80px] "
+    >
+
+      <!-- logo -->
+      <div
+        class="relative md:absolute md:left-[40px] md:top-[20px] flex_center"
+      >
+        <img
+          src="./assets/images/logo.png"
+          alt="logo"
+          class="w-[100px] h-auto object-contain rounded-full"
+        />
       </div>
-    
-    
-    <div class="relative w-full max-w-[100%] overflow-hidden">
-        
-        <div class="w-full absolute right-0  h-[90px] lg:h-[100px] flex justify-end items-center px-[1.5rem] lg:px-[2rem] 2xl:px-[3rem] 2xl:py-[1.75rem] z-[999]">
-            <a href="https://raydium.io/swap/" target="_blank" class="font-single bg-[#3A80FE] px-2 absolute rounded-full flex items-center gap-3 border-[2px] lg:border-[5px] border-black [box-shadow:-1px_2px_0px_#000000] text-white transition-all duration-300 hover:shadow-none cursor-pointer z-[999]  ">
-                <span class="px-6 py-2 xl:py-[0.3] text-[18px] sm:text-[20px] leading-[1] md:text-[24px] xl:text-[32px] 2xl:text-[40px] text-outlineBlack-thin-p ">RAYDIUM</span>
-            
-            </a>
-        </div> 
 
-        <section class="hero  relative xl:h-[650px] 2xl:h-auto">
-            
-           <div class="w-full pt-[100px] xl:pt-[50px] z-10 relative h-auto flex justify-center py-[2rem] xl:py-[0]">
-              <img src="./assets/images/narto.png" alt="narto" class="w-[200px] md:w-[30%] xl:w-[250px] 2xl:w-[20vw]  object-contain h-auto" 
-              data-aos="fade-up">
-           </div>
+      <!-- nav -->
+       <div class="relative md:absolute md:right-[40px] md:top-[50px] flex_center gap-4 w-full md:w-[20%] text-[20px] max-lg:flex-wrap  ">
+          <li class="w-full lg:w-auto text-center">
+            <a href="#home">Home</a>
+          </li>
+          <li class="w-full lg:w-auto text-center">
+            <a href="#about">About</a>
+          </li>
+          <li class="w-full lg:w-auto text-center">
+            <a href="#HowToBuy">How To Buy</a>
+          </li> 
+       </div>
 
-           <div class="main-image z-10 w-full relative h-full xl:h-auto mt-[5rem] xl:mt-[2rem] max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1100px] mx-auto">
-            <div class="image-narto w-full h-auto relative flex justify-start px-[0vw] xl:px-0">
-                <img src="./assets/images/$narto_naruto.png" alt="narto" class="min-w-[200px] w-[50vw] sm:w-[400px] xl:w-[470px] 2xl:w-[600px] xl:mt-[-.1rem] 2xl:mt-[-1rem]" 
-                data-aos="fade-right"
-                data-aos-duration="600">
-            </div>
-            <div class="text absolute top-[-4rem] xl:top-[-3.5rem] right-[8vw] flex items-center justify-center xl:right-0" 
-            data-aos="fade-left"
-            data-aos-duration="600">
-                <img src="./assets/images/bubble.png" alt="buble text" class="min-w-[250px]  w-[62vw] h-auto sm:w-[300px] xl:w-[400px] 2xl:w-[550px]">
-                <p class="writingAnimated absolute w-[70%] text-[.75rem] text-center leading-[1.4] h-[57%] sm:text-[.75rem] lg:text-[.85rem] xl:text-[1.35rem] 2xl:text-[1.9875rem]  xl:leading-[1] xl:h-[52%]  " data-typed-strings="we drem to become hukage of Solanu!becum part of ninja, meet your favurit $narto charactur on Solanu. Datebayuuuuu!!!"></p> 
-            </div>
-           </div>
 
-           <div class="bg absolute z-0 left-0 top-0 w-full h-full">
-            <img src="./assets/images/bg_hero.jpg" alt="" class="w-full h-full object-cover opacity-50 blur-[5px]">
-           </div>
+      <!-- social -->
+      <div class="flex_center flex-wrap gap-7 w-full">
+        <a
+          href="#"
+          class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+        >
+          <span class="w-full h-full rounded-full flex_center">
+            <img
+              src="./assets/images/telegram.svg"
+              alt="telegram"
+              class="relative z-10 w-[90%]"
+            />
+            <img
+              src="./assets/images/bgSocial.svg"
+              alt="bgSocial"
+              class="left-0 top-0 z-0 w-full h-full absolute"
+            />
+          </span>
+        </a>
+        <a
+          href="#"
+          class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+        >
+          <span class="w-full h-full rounded-full flex_center">
+            <img
+              src="./assets/images/twitter.svg"
+              alt="twitter"
+              class="relative z-10 w-[70%]"
+            />
+            <img
+              src="./assets/images/bgSocial.svg"
+              alt="bgSocial"
+              class="left-0 top-0 z-0 w-full h-full absolute"
+            />
+          </span>
+        </a>
+        <a
+          href="#"
+          class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+        >
+          <span class="w-full h-full rounded-full flex_center">
+            <img
+              src="./assets/images/bscscan.png"
+              alt="bscscan"
+              class="relative z-10 w-[60%]"
+            />
+            <img
+              src="./assets/images/bgSocial.svg"
+              alt="bgSocial"
+              class="left-0 top-0 z-0 w-full h-full absolute"
+            />
+          </span>
+        </a>
+        <a
+          href="#"
+          class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+        >
+          <span class="w-full h-full rounded-full flex_center">
+            <img
+              src="./assets/images/BNBCHAIN.webp"
+              alt="BNBCHAIN"
+              class="relative z-10 w-[70%]"
+            />
+            <img
+              src="./assets/images/bgSocial.svg"
+              alt="bgSocial"
+              class="left-0 top-0 z-0 w-full h-full absolute"
+            />
+          </span>
+        </a>
+        <a
+          href="#"
+          class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+        >
+          <span class="w-full h-full rounded-full flex_center">
+            <img
+              src="./assets/images/binance.webp"
+              alt="binance"
+              class="relative z-10 w-[70%]"
+            />
+            <img
+              src="./assets/images/bgSocial.svg"
+              alt="bgSocial"
+              class="left-0 top-0 z-0 w-full h-full absolute"
+            />
+          </span>
+        </a>
+      </div>
 
-        </section>
+      <!-- hero -->
+      <section id="home" class="w-[90%] flex_center gap-7 flex-wrap xl:max-w-[2000px]">
 
-        <div class="moving-text-container whitespace-nowrap z-[999] flex items-center overflow-hidden relative w-full bg-[#3A80FE] py-[.5rem] md:py-[1.7rem] xl:py-[.2rem] md:mt-[-.3rem]  border-t-[4px] border-b-[4px] md:border-t-[9px] md:border-b-[9px] border-black  text-white text-outlineBlack-thin [text-shadow:-1px_2px_0px_#000000] md:[text-shadow:-2px_3px_0px_#000000] text-[2rem] md:text-[2.5rem] xl:text-[3.5rem] gap-[2rem]">
-
-                <div class="scroll whitespace-nowrap">
-                    <div class="wrap flex gap-[1rem] xl:gap-[2rem] font-single">
-                        <p>$NART0</p>    
-                        <p>$NART0</p>    
-                        <p>$NART0</p>    
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                        <p>$NART0</p>  
-                    </div>
-                  </div>
+        <div
+        class="w-[90%] md:w-[60%] xl:w-[65%] flex_center relative pt-4 lg:pt-[20px] pb-[10px]"
+      >
+        <img
+          src="./assets/images/gif2.gif"
+          alt=""
+          class="w-[96%] relative z-10"
+        />
+        <img
+          src="./assets/images/borderGif.png"
+          alt=""
+          class="absolute left-0 top-0 w-full h-full mirrorY"
+        />
         </div>
-       
-        <section class="contract-address  w-full bg-[#A6C2FA] relative flex items-center flex-col justify-center gap-[1rem] py-[2rem] lg:py-[3rem] px-6 lg:px-0 xl:pb-[6rem]">
 
-            <h2 class="font-single  text-center text-[3rem] sm:text-[3rem] lg:text-[4.5rem] text-white [text-shadow:-1px_2px_0px_#000000]  lg:[text-shadow:-4px_6px_0px_#000000] mb-4" 
-            data-aos="fade-up"
-            data-aos-duration="400">
-                CONTRACT ADDRESS
-            </h2>
-
-            
-            <div class="w-full md:w-[65%] xl:w-[58%] mx-auto">
-
-                <div class="flex items-center gap-4 justify-center mb-[2rem] lg:mb-[3rem]">
-                    <a href="#" class="bg-[#FF910A] pl-1 pr-2 py-1 lg:py-1.5  lg:px-[.5rem] xl:px-[2rem] rounded-full flex items-center gap-3 border-[2px] xl:border-[5px] border-black  text-white transition-all duration-300 hover:shadow-none" data-aos="fade-up"
-                    data-aos-delay="100"
-                    data-aos-duration="400">
-                    <img fetchpriority="high" decoding="async" data-nimg="fill" src="./assets/images/btn.webp" class="xl:w-auto w-[30px] lg:w-[30px] xl:h-[60px]" alt="">
-                    <div class="font-single text-[18px] sm:text-[20px] md:text-[24px] xl:text-[2.5rem] 2xl:text-[3rem] text-outlineBlack-thin-p ">DEX TOOLS</div>
-                    </a>
-                </div>
-
-            <div class="flex items-center mb-[2rem] lg:mb-[3rem] gap-3 bg-white pl-4 xs:pl-6 pr-1 xs:pr-3 py-1 xs:py-2 rounded-full border-[2px] xl:border-[3px] border-[#000]  2xl:max-w-[900px] 2xl:mx-auto" data-aos="fade-up"
-            data-aos-duration="400">
-                <input type="text" class="text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] xl:text-[1.5rem] 2xl:tracking-[2px]  w-full bg-transparent border-none outline-none hover:active:focus:border-none hover:active:focus:outline-none font-gochi" value="0x00000000000000000dEaD" >
-                <div class="copy-btn text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] text-black px-4 xs:px-6 py-1 xs:py-2 rounded-full bg-[#3A80FE] border-[2px] xl:border-[3px] border-black  cursor-pointer transition-all duration-300 hover:scale-[1.1]">COPY</div>
-            </div> 
-
-        
-            </div>
-
-          
-            <div id="imageContainer" class="relative flex justify-center items-center flex-col  w-full max-w-[100%]  ">
-
-                <div class="image_container w-full max-w-[400px] md:max-w-[100%] h-[600px] md:h-[700px] xl:h-[500px] 2xl:h-[590px] 2xl:mt-[3rem] relative mx-auto flex justify-center items-center">
-
-                    <img src="./assets/images/border_random.png" alt="" class="rotate-90 md:rotate-0   min-w-[150%] max-w-[500px] md:min-w-[800px] md:w-[90%] lg:w-[80%] lg:max-w-[1000px] h-auto xl:w-[0%] 2xl:w-[90%] absolute z-0 object-cover lg:object-contain   ">
-
-                    <div class="image_random w-[62%]  md:w-[70%] lg:w-[700px] h-[420px] md:h-[350px] xl:h-[395px] 2xl:h-[460px] xl:pb-[2rem]  absolute  flex justify-center items-center ">
-                        <img id="displayedImage"  src="./assets/images/$narto_sticker9.png" alt="Random" class="h-[95%]  xl:mt-[2rem] 2xl:mt-0 w-auto object-contain " 
-                        data-aos="zoom-in" 
-                        data-aos-duration="400"
-                        data-aos-delay="200"> 
-                        
-                        <img id="loadingImage" src="./assets/images/loader.png" alt="Loading..." class="loading-image z-[9] w-[100px] h-auto object-contain absolute">
-                        <div class="bg  w-full md:w-[60%] h-[80%] md:h-[90%] xl:h-[85%] 2xl:h-[90%] bg-[#fff] absolute z-[4] xl:top-[2rem] 2xl:top-[1.75rem]"></div>
-                    </div>
-
-                </div>
-            
-                <audio id="loadingAudio" src="./assets/videos/smoke_up.wav" autoplay loop muted class="loading-audio"></audio>
+      </section>
 
 
-                <div class="flex items-center xl:items-start  relative justify-center  gap-5 z-[999] h-auto pb-[2rem] xl:pt-[3rem] xl:mt-[-4rem] 2xl:mt-[-3rem] w-full ">
+      <!-- contract -->
+      <div
+        class="contract w-[90%] md:w-[45%] lg:w-[50%] max-w-[1000px] h-[100px] flex_center relative"
+      >
+        <img
+          src="./assets/images/border1.svg"
+          alt="border"
+          class="w-full h-full absolute left-0 top-0"
+        />
 
-                <div class="relative" 
-                data-aos="fade-up">
-                    <button id="randomizeButton" onclick="randomizeImage()" class="hover_btn cursor-pointer bg-[#fff] px-8 lg:px-6 xl:px-[2.5rem] py-1 lg:py-1.5 rounded-full flex items-center gap-3  border-[2px] xl:border-[5px] border-black [box-shadow:0px_0px_0px_#000000] xl:[box-shadow:-4px_6px_0px_#000000] text-black  relative" > 
-                        <span class="uppercase text-[15px] sm:text-[20px] md:text-[24px] xl:text-[25px] 2xl:text-[32px]">Randomize</span>
-                    </button>
-                </div>
-            
-                    <a id="downloadLink"  download="random_image.png" data-aos="fade-up">
-                    <button id="downloadButton" onclick="downloadImage()" class="hover_btn bg-[#fff] px-4 lg:px-6 py-1 lg:py-1.5 rounded-full flex items-center gap-3  border-[2px] xl:border-[5px] border-black [box-shadow:0px_0px_0px_#000000]  xl:[box-shadow:-4px_6px_0px_#000000]  text-black ">
-                        <span class="uppercase text-[15px] sm:text-[20px] md:text-[24px] xl:text-[25px] 2xl:text-[32px]">
-                            Download Image
-                        </span>
-                    </button>
-                    </a>
-            
-                </div>
+        <div class="w-full h-full flex_center gap-7 z-10 relative ">
+          <p data-set="00000000000000000000000000" class="copy-box__text text-[14px] lg:text-[22px]">00000000000000000000000000</p>
+          <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
+            <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
+          </button>
+        </div>
+      </div>
 
-            </div> 
+      <!-- supply, liqiu, tax -->
+      <section
+        class="w-[90%] flex_between flex-wrap md:gap-7 max-xl:justify-center xl:max-w-[2000px]"
+      >
+        <div
+          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
+        >
+          <img
+            src="./assets/images/border2.svg"
+            alt="border"
+            class="w-full h-full absolute left-0 top-0"
+          />
 
-   
+          <div
+            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+          >
+            <p><span class="font-semibold">Supply : </span> 10 Million</p>
+          </div>
+        </div>
 
-        </section> 
+        <div
+          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
+        >
+          <img
+            src="./assets/images/border2.svg"
+            alt="border"
+            class="w-full h-full absolute left-0 top-0 mirrorX"
+          />
 
-        <section class="how_to_container  bg-[#E1ECF7] relative w-full  pb-0 pt-[40px] h-auto sm:pt-[80px]">
+          <div
+            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+          >
+            <p><span class="font-semibold">Tax : </span>0%</p>
+          </div>
+        </div>
 
-            <div class="relative z-[1] w-full md:min-w-[90%] left-0 mx-auto">
-    
-                <div class="mb-[2.5rem]">
-                    <h2 class="font-single how-to-title text-center text-[4rem] md:text-[4rem] xl:text-[7.625rem] leading-[1] text-[#3A80FE] text-outlineBlack [text-shadow:-2px_3px_0px_#000000] lg:[text-shadow:-4px_6px_0px_#000000] mb-1" 
-                    data-aos="fade-up"
-                    data-aos-duration="400"
-                    data-aos-delay="100">HOW TO GET</h2>
-                    <div class="flex justify-center items-center gap-2" 
-                    data-aos="fade-right"
-                    data-aos-duration="400"
-                    data-aos-delay="300">
-                    <p class="text-center text-[1.125rem] sm:text-[1.25rem] md:text-[1.5rem] xl:text-[2rem] 2xl:text-[2.8125rem]">$NARTO is on</p> 
-                    <img src="./assets/icons/solanaIcon.svg" class=" lg:ml-[1rem] lg:w-auto md:w-[80px] w-[60px] 2xl:w-[140px]" alt="">
-                    </div>
-                </div>
+        <div
+          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
+        >
+          <img
+            src="./assets/images/border2.svg"
+            alt="border"
+            class="w-full h-full absolute left-0 top-0 mirrorY"
+          />
 
-                <div class="how-to-get relative md:w-[95%] max-w-[1000px] lg:max-w-[1000px]  xl:max-w-[1200px] 2xl:max-w-[1500px]  mx-auto mb-[2rem]">
+          <div
+            class="w-full flex_center gap-4 text-[18px] md:text-[19px] lg:text-[25px]"
+          >
+            <p><span class="font-semibold">LP : </span>Liquidity Burnt</p>
+          </div>
+        </div>
+      </section>
 
-                    <div class="tracks  absolute left-0 top-0 h-full w-full z-0 flex items-center justify-center flex-col"> 
-
-                        <img src="./assets/icons/1to2.svg" alt="" class="image_track 2xl:h-[200px] w-auto  absolute opacity-0 sm:opacity-100 md:block right-[20vw]  top-[80px] xl:top-[90px] 2xl:right-[300px] 2xl:top-[120px]"
-                        data-aos="zoom-in"
-                        data-aos-duration="400"
-                        >
-                       
-                        <img src="./assets/icons/2to3.svg" alt="" class="image_track 2xl:h-[200px] absolute opacity-0 sm:opacity-100 md:block left-[270px] md:left-[200px] xl:left-[260px] 2xl:left-[310px] top-[240px]  xl:top-[380px] 2xl:top-[540px]" 
-                        data-aos="zoom-in"
-                        data-aos-duration="400"
-                        >
-                        
-                        <!-- 3 to 4 -->
-                        <img src="./assets/icons/1to2.svg" alt="" class="image_track  2xl:h-[200px] w-auto  absolute opacity-0 sm:opacity-100 md:block right-[20vw] top-[500px] md:top-auto md:bottom-[16vw] lg:bottom-[150px] xl:bottom-[240px] 2xl:right-[300px] 2xl:bottom-[330px]"
-                        data-aos="zoom-in"
-                        data-aos-duration="400"
-                         >
-
-                        <!-- solana icon --> 
-                        <img src="./assets/icons/solanaIcon.svg" class="absolute  md:block base_icon lg:ml-[1rem] lg:w-[140px] md:w-[80px] w-[60px] 2xl:w-[220px] top-[110px] left-[50vw] lg:left-[44vw] xl:left-[580px] xl:top-[120px] 2xl:left-[730px] 2xl:top-[155px] " alt=""
-                        data-aos="zoom-in"
-                        data-aos-duration="300">     
-
-                        <img src="./assets/icons/solanaIcon.svg" class="absolute  md:block base_icon lg:ml-[1rem] lg:w-[140px] md:w-[80px] w-[60px] 2xl:w-[220px]  top-[255px] left-[40vw] lg:left-[32vw] xl:left-[310px] xl:top-[350px] 2xl:left-[530px] 2xl:top-[465px] " alt=""
-                        data-aos="zoom-in"
-                        data-aos-duration="300"> 
-                        
-                        
-                        <img src="./assets/icons/solanaIcon.svg" class="absolute  md:block base_icon lg:ml-[1rem] lg:w-[140px] md:w-[80px] w-[60px] 2xl:w-[220px] top-[440px] left-[52vw]  lg:top-[440px] lg:left-[48vw] xl:left-[600px] xl:top-[485px] 2xl:left-[830px] 2xl:top-[705px] " alt=""
-                        data-aos="zoom-in"
-                        data-aos-duration="300"> 
-
-
-                    </div>
-
-                    <!-- how to -->
-                    <div class="relative row w-full md:h-[700px]  xl:h-[890px] 2xl:h-[1300px] flex flex-col gap-[6rem] md:gap-0 z-10 max-w-full ">
-                        
-                        <!-- 1 -->
-                        <div class="how-to relative z-[5] md:z-10 md:absolute  md:left-[0rem]  text-center " 
-                        data-aos="zoom-in"
-                        data-aos-duration="400" > 
-                            <div class="relative bg-white md:w-[300px] lg:w-[400px] xl:w-[480px] 2xl:w-[600px] 2xl:h-[auto] px-[2rem] md:px-[1.5rem] py-6 rounded-[20px] xl:rounded-[40px] border-[2px] border-l-[3px] border-b-[3px] 2xl:border-l-[10px]    2xl:border-b-[10px] border-black [box-shadow:-4px_6px_0px_#000000] text-center mx-auto md:mx-0 w-full xs:w-[80%] md:inline-block">
-                                <h2 class="font-single text-center text-[2.5rem] md:text-[1.85rem] lg:text-[1.9rem] xl:text-[2.5rem] 2xl:text-[46px] relative  sm:text-[1.75rem] text-[#3A80FE] text-outlineBlack-thin tracking-tight leading-[1]  [text-shadow:-3px_2px_0px_#000000] md:[text-shadow:-2px_1px_0px_#000000] mb-3 lg:pl-10">
-                                    Install Phantom Wallet and Fill with SOL
-                                </h2>
-                                <p class="font-gochi relative font-[900] text-[.95rem] 2xl:leading-[1.5] 2xl:text-[1.475rem] xl:text-[1rem] sm:text-[0.875rem] xl:font-[400] text-[#000] capitalize leading-[1.2]">Download and install Phantom Wallet from phantom.app. Create a new wallet or import one if you already have an account. Fill Phantom Wallet with SOL: You can buy SOL directly within Phantom Wallet via MoonPay or Ramp, or transfer from an exchange like Binance, Coinbase, or Kraken to your Phantom wallet address.
-                                </p>
-                                 <img src="./assets/images/$NARTO_elemen_ramen1.png" class="w-[100px] md:w-[140px] xl:w-[183px] 2xl:w-[255px] absolute -right-[2rem] md:-right-[3rem] xl:-right-[4rem] -top-[3rem] md:-top-[4rem] 2xl:top-[-170px] xl:-left-[5rem] 2xl:-left-[7rem]
-                                 lg:-left-[5rem]
-                                 lg:-bottom-[1rem]" alt="">
-                           
-                                </div>
-                       </div>
-                         
-                        <!-- 2 -->
-                       <div class="how-to relative z-[4] md:z-10 md:absolute right-0 md:top-[190px] xl:top-[220px] 2xl:top-[300px] text-center " data-aos="zoom-in"
-                       data-aos-duration="400" >
-                       <div class="how_to_track w-full absolute left-0 top-[-178px]  z-[99] flex justify-center md:hidden">
-                        <img src="./assets/icons/mobile_howTo.svg" alt="" class="relative object-contain">
-                       </div>
-                            <div  class="relative bg-white md:w-[300px] lg:w-[400px] xl:w-[480px] 2xl:w-[600px] 2xl:h-[auto] px-[1.5rem] lg:px-[2.5rem] py-6 rounded-[20px] xl:rounded-[40px] border-[2px] border-l-[3px] border-b-[3px] 2xl:border-l-[10px]    2xl:border-b-[10px] border-black [box-shadow:-4px_6px_0px_#000000] text-center mx-auto md:mx-0 w-full xx:w-[80%] md:inline-block md:-mt-[1rem] xl:-mt-[2rem]">
-                                <h2 class="font-single text-center text-[2.5rem] md:text-[1.85rem] lg:text-[1.9rem] xl:text-[2.5rem] 2xl:text-[46px] relative sm:text-[1.75rem] text-[#3A80FE] text-outlineBlack-thin tracking-tight leading-[1]  [text-shadow:-3px_2px_0px_#000000] md:[text-shadow:-2px_1px_0px_#000000] mb-3">
-                                    Open DexScreen to <br class="max-lg:hidden"> Monitor Tokens on Solana
-                                </h2>
-                                <p class="font-gochi relative font-[900] text-[.95rem] 2xl:leading-[1.5] 2xl:text-[1.475rem] xl:text-[1rem] sm:text-[0.875rem] xl:font-[400] xl:pl-[2rem] text-[#000] leading-[1.2]">Visit DexScreen and select the Solana network. Search for the token you want to buy, such as SOL or another token running on the Solana network. DexScreen will show you relevant markets for that token on various DEXs (Decentralized Exchanges) such as Raydium or Orca.
-                                </p>
-                                <img src="./assets/images/$NARTO_elemen_ramen2.png" class="w-[100px] absolute md:w-[140px] xl:w-[183px] 2xl:w-[255px] -top-[3rem]  -right-[2rem] md:-right-[5rem] xl:-right-[4rem]  md:-top-[4rem] xl:-top-[6rem]  2xl:right-[-9rem]  2xl:top-[-170px]" alt="">
-                            </div>
-                       </div>
-                       
-                       <!-- 3 -->
-                        <div class="how-to relative z-[3] md:z-10 md:w-[400px] md:absolute md:left-0 md:bottom-[220px] xl:bottom-[200px] 2xl:bottom-[300px] text-center " data-aos="zoom-in"
-                        data-aos-duration="400" > 
-                        <div class="how_to_track w-full absolute left-0 top-[-178px]  z-[99] flex justify-center md:hidden">
-                            <img src="./assets/icons/mobile_howTo.svg" alt="" class="relative object-contain">
-                           </div>
-                            <div class="relative  bg-white md:w-[300px] lg:w-[400px] xl:w-[480px] 2xl:w-[600px] 2xl:h-[auto] px-[1.5rem] lg:px-[2.5rem] py-6 rounded-[20px] xl:rounded-[40px] border-[2px] border-l-[3px] border-b-[3px] 2xl:border-l-[10px]    2xl:border-b-[10px] border-black [box-shadow:-4px_6px_0px_#000000] text-center mx-auto md:mx-0 w-full  md:inline-block md:-mt-[1rem] xl:-mt-[2rem]">
-                                <h2 class="font-single text-center text-[2.5rem] md:text-[1.85rem] lg:text-[1.9rem] xl:text-[2.5rem] 2xl:text-[46px] text-[#3A80FE] text-outlineBlack-thin tracking-tight leading-[1]  [text-shadow:-3px_2px_0px_#000000]  md:[text-shadow:-2px_1px_0px_#000000] mb-3 md:pl-[3rem]">
-                                    Connect Phantom Wallet to DEX
-                                </h2>
-                                <p class="font-gochi relative font-[900] text-[.95rem] 2xl:leading-[1.5] 2xl:text-[1.475rem] xl:text-[1rem] sm:text-[0.875rem] xl:font-[400] text-[#000] leading-[1.2]">Once you find the token you want to buy on DexScreen, it will direct you to the appropriate DEX, such as Raydium or Orca. Click Connect Wallet on DEX and select Phantom Wallet to connect it.
-                                </p>
-                                <img src="./assets/images/$NARTO_elemen_ramen3.png" class=" w-[100px] absolute md:w-[140px] xl:w-[183px] 2xl:w-[255px] -top-[3rem]   right-[-2rem] md:right-auto md:-left-[5rem] xl:-left-[4rem] xl:right-auto  md:-top-[4rem] xl:-top-[6rem] 2xl:top-[-9rem] 2xl:left-[-9rem]" alt="">
-                            </div> 
-                       </div>
-
-                       <!-- 4 -->
-                        <div class="how-to relative z-[1] md:z-10  mb-[10vw] md:mb-0   md:absolute right-0 md:bottom-[0px]  text-center "
-                         data-aos="zoom-in"
-                                data-aos-duration="400"
-                                >
-                                <div class="how_to_track w-full absolute left-0 top-[-178px]  z-[99] flex justify-center md:hidden">
-                                    <img src="./assets/icons/mobile_howTo.svg" alt="" class="relative object-contain">
-                                   </div> 
-        
-                                    <div  class="relative bg-white md:w-[300px] lg:w-[400px] xl:w-[480px] 2xl:w-[600px] 2xl:h-[auto] px-[1.5rem] lg:px-[2.5rem] py-6 rounded-[20px] xl:rounded-[40px] border-[2px] border-l-[3px] border-b-[3px] 2xl:border-l-[10px]    2xl:border-b-[10px] border-black  [box-shadow:-4px_6px_0px_#000000] text-center mx-auto md:mx-0 w-full xx:w-[80%] md:inline-block md:-mt-[1rem] xl:-mt-[2rem]">
-                                        <h2 class="font-single text-center text-[2.5rem] md:text-[1.85rem] lg:text-[1.9rem] xl:text-[2.5rem] 2xl:text-[46px] relative sm:text-[1.75rem] text-[#3A80FE] text-outlineBlack-thin tracking-tight leading-[1]  [text-shadow:-3px_2px_0px_#000000] md:[text-shadow:-2px_1px_0px_#000000] mb-3 2xl:w-[80%] mx-auto">
-                                            Swap SOL for <br> $Narto
-                                        </h2>
-                                        <p class="font-gochi relative font-[900] text-[.95rem] 2xl:leading-[1.5] 2xl:text-[1.475rem] xl:text-[1rem] sm:text-[0.875rem] xl:font-[400] xl:pl-[2rem] text-[#000] leading-[1.2]">
-                                            On the DEX, select SOL as the token you are swapping. Select the  token $narto. Enter the amount of SOL you want to swap, then confirm the transaction in your Phantom Wallet. Once the transaction is complete, the purchased tokens will appear in your Phantom Wallet.
-                                        </p>
-                                        <img  src="./assets/images/$NARTO_elemen_ramen4.png" class="w-[100px] absolute md:w-[140px] xl:w-[183px] 2xl:w-[265px] -top-[3rem]   -right-[2rem] md:-right-[5rem] xl:-right-[4rem]  md:-top-[4rem] xl:-top-[6rem] 2xl:top-[-9rem] 2xl:right-[-9rem]" alt="">
-                                    </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="image w-full ">
-                    <div class="absolute bottom-0 left-0 w-full h-[80px] xl:h-[100px] bg-white border-t-[4px] border-b-[4px] xl:border-t-[9px] xl:border-b-[9px] border-black"></div>
-                    <div class="image_container relative w-full flex justify-end h-auto">
-                        <img src="./assets/images/$narto_scene.png" alt="" class="w-[80vw] xl:w-[50%] h-auto object-contain"  data-aos="fade-left"
-                        data-aos-duration="400"
-                        >
-                    </div>
-                </div>
-
-            </div>
-
-        </section> 
-
-
-        <section class="tokenomics   bg-[#A6C2FA] w-full relative py-[3rem]">
-
-            <h2 class="font-single text-center  text-white text-outlineBlack [text-shadow:-2px_2px_0px_#000000] lg:[text-shadow:-4px_6px_0px_#000000] mb-4 text-[2.6rem] md:text-[2.5rem] lg:text-[64px] xl:text-[4.5rem]" data-aos="fade-right">$NARTO TOKENOMICS</h2>
-
-            <div class="font-single tokenomics mx-auto bg-[#fff] w-[92%] sm:w-[70%] xl:w-[800px] rounded-[2rem] text-center  border-black border-l-[7px] lg:border-l-[14px] border-b-[7px] lg:border-b-[14px] border-t-[2px] border-r-[2px] ">
-                <h2 class=" text-[#FF910A] text-[2.5rem] md:text-[3rem] xl:text-[4.5rem] text-outlineBlack" data-aos="fade-right">Tokenomics</h2>
-               <div class="about flex flex-col items-center relative text-black">
-                <p class="font-gochi text-[1.7rem] md:text-[1.5rem] xl:text-[1.9rem] " data-aos="fade-right">Name : Narto</p>
-                <p class="font-gochi text-[1.7rem] md:text-[1.5rem] xl:text-[1.9rem] " data-aos="fade-right">Ticker : $NARTO</p>
-                <p class="font-gochi text-[1.7rem] md:text-[1.5rem] xl:text-[1.9rem] " data-aos="fade-right">Lp : Burnt</p>
-               </div>
-                <div class=" flex flex-col items-center w-full relative gap-[1.5rem] text-[#fff]  py-8 ">
-                    <div class="relative border-black border-[2px] lg:border-[4px] bg-[#E1ECF7] w-[75%] sm:w-[50%] h-auto py-3 rounded-[15px] flex justify-center items-center flex-col gap-[1px]" data-aos="fade-up">
-                        <h3 class="text-[3rem] md:text-[2.2rem] xl:text-[3rem] 2xl:text-[4rem] text-outlineBlack-thin">10.000.000</h3>
-                        <p class="text-[1.9rem] md:text-[1.25rem] xl:text-[1.95rem] text-outlineBlack-thin">supply</p>
-                    </div>
-                    <div class="relative border-black border-[2px] lg:border-[4px] bg-[#E1ECF7] w-[75%] sm:w-[50%] h-auto py-3 rounded-[15px] flex justify-center items-center flex-col gap-[1px]" data-aos="fade-up">
-                        <h3 class="text-[3rem] md:text-[3.25rem] xl:text-[3rem] 2xl:text-[4rem] text-outlineBlack-thin">0%</h3>
-                        <p class="text-[1.9rem] md:text-[3.25rem] xl:text-[1.95rem] text-outlineBlack-thin">Tax</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <div class="moving-text-container  whitespace-nowrap z-[999] flex items-center overflow-hidden relative w-full bg-[#fff] py-[.5rem] md:py-[1.7rem] xl:py-[.2rem]  border-t-[4px] border-b-[4px] md:border-t-[9px] md:border-b-[9px] border-black  text-white text-outlineBlack-thin [text-shadow:-1px_2px_0px_#000000] md:[text-shadow:-2px_3px_0px_#000000] text-[2rem] md:text-[2.5rem] xl:text-[3.5rem] gap-[2rem]">
-
-            <div class="scroll whitespace-nowrap">
-                <div class="wrap flex gap-[1rem] xl:gap-[2rem] font-single">
-                    <p>$NART0</p>    
-                    <p>$NART0</p>    
-                    <p>$NART0</p>    
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                    <p>$NART0</p>  
-                </div>
+      <!-- about -->
+      <section id="about" class="w-[90%] flex_center gap-7 flex-wrap xl:max-w-[2000px]">
+              <div
+                class="w-[90%] md:w-[60%] xl:w-[45%] flex_center relative py-[10px]"
+              >
+                <img
+                  src="./assets/images/gif1.gif"
+                  alt=""
+                  class="w-[96%] relative z-10"
+                />
+                <img
+                  src="./assets/images/borderGif.png"
+                  alt=""
+                  class="absolute left-0 top-0 w-full h-full"
+                />
               </div>
-    </div>
+      
+              <div class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col">
+                <h1 class="carumba_font bold_shadow text-[110px] leading-[1]">
+                  About
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                  deleniti. Corrupti, soluta dolor numquam voluptatibus officiis modi
+                  officia facilis necessitatibus quas consequuntur, impedit facere
+                  ullam distinctio porro aspernatur quidem. Mollitia! Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Sequi natus maiores
+                  impedit ipsum itaque sunt quos nihil, quis reiciendis odio velit
+                  possimus consequatur, doloremque quia numquam dolor laudantium minus
+                  nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minus molestias, neque ipsa ratione delectus aspernatur, quasi
+                  optio, voluptatibus assumenda ea rem! Rerum, animi libero dolorum
+                  eius amet possimus saepe voluptas.
+                </p>
+              </div>
+      </section>
 
+      <!-- how to buy -->
+      <section id="HowToBuy" class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]">
 
-         <div class="short-comics  bg-[#E1ECF7]  w-full relative h-auto overflow-hidden py-[4rem]">
-            <swiper-container class="mySwiper bg-[#E1ECF7] h-auto w-full relative" navigation="true" slides-per-view="1" >
-                <swiper-slide class="w-[100%] bg-[#E1ECF7] h-full flex items-center justify-center">
-                    <div class="comic_container  bg-white   w-[85%] md:w-[70%] 2xl:w-[80%] max-w-[1400px] h-auto border-black border-t-[3px] border-r-[3px] border-l-[9px] lg:border-l-[13px] border-b-[9px] lg:border-b-[13px] rounded-[35px] py-[1.5rem]">
-                        <h2 class="font-single text-outlineBlack text-center text-[3rem] sm:text-[3rem] lg:text-[5rem] 2xl:text-[8rem] text-white [text-shadow:-1px_3px_0px_#000000] lg:[text-shadow:-3px_6px_0px_#000000] 2xl:[text-shadow:-4px_9px_0px_#000000]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >SHORT COMICS</h2>
-                        <div class="image w-full h-auto relative flex justify-center ">
-                            <img src="./assets/images/$NARTO_comics1.png" alt="" class="w-[100%] max-w-[950px] h-auto relative object-contain">
-                        </div>
-                        <p class="text-black text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Memes to Sher</p>
-                        <button id="button1" class="font-single mx-auto my-[1rem] text-outlineBlack-btn_narto  text-white bg-[#FF910A] rounded-full border-black border-[4px] lg:border-[7px] py-[.25rem] px-[1.5rem] lg:py-[.5rem] lg:px-[2.5rem] text-[1.75rem] md:text-[2rem] xl:text-[3.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >GET MEMES</button>
-                        <p class="text-center mx-auto w-[90%] sm:w-[60%] xl:w-[63%] text-[1.2rem] md:text-[1.55rem] 2xl:text-[3rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Use aur meme chenel to sher
-                            aur fun content oll over yor inturnet!</p>
-                    </div>
-                </swiper-slide> 
-                <swiper-slide class="w-[100%] bg-[#E1ECF7] h-full flex items-center justify-center">
-                    <div class="comic_container  bg-white w-[85%] md:w-[70%] 2xl:w-[80%] max-w-[1400px] h-auto border-black border-t-[3px] border-r-[3px] border-l-[9px] lg:border-l-[13px] border-b-[9px] lg:border-b-[13px] rounded-[35px] py-[1.5rem]">
-                        <h2 class="font-single text-outlineBlack text-center text-[3rem] sm:text-[3rem] lg:text-[5rem] 2xl:text-[8rem] text-white [text-shadow:-1px_3px_0px_#000000] lg:[text-shadow:-3px_6px_0px_#000000] 2xl:[text-shadow:-4px_9px_0px_#000000]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >SHORT COMICS</h2>
-                        <div class="image w-full h-auto relative flex justify-center ">
-                            <img src="./assets/images/$NARTO_comics2.png" alt="" class="w-[100%] max-w-[950px] h-auto relative object-contain">
-                        </div>
-                        <p class="text-black text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Memes to Sher</p>
-                        <button id="button2" class="font-single mx-auto my-[1rem] text-outlineBlack-btn text-white bg-[#FF910A] rounded-full border-black border-[4px] lg:border-[7px] py-[.25rem] px-[1.5rem] lg:py-[.5rem] lg:px-[2.5rem] text-[1.75rem] md:text-[2rem] xl:text-[3.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >GET MEMES</button>
-                        <p class="text-center mx-auto w-[90%] sm:w-[60%] xl:w-[63%] text-[1.2rem] md:text-[1.55rem] 2xl:text-[3rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Use aur meme chenel to sher
-                            aur fun content oll over yor inturnet!</p>
-                    </div>
-                </swiper-slide> 
-                <swiper-slide class="w-[100%] bg-[#E1ECF7] h-full flex items-center justify-center">
-                    <div class="comic_container  bg-white w-[85%] md:w-[70%] 2xl:w-[80%] max-w-[1400px] h-auto border-black border-t-[3px] border-r-[3px] border-l-[9px] lg:border-l-[13px] border-b-[9px] lg:border-b-[13px] rounded-[35px] py-[1.5rem]">
-                        <h2 class="font-single text-outlineBlack text-center text-[3rem] sm:text-[3rem] lg:text-[5rem] 2xl:text-[8rem] text-white [text-shadow:-1px_3px_0px_#000000] lg:[text-shadow:-3px_6px_0px_#000000] 2xl:[text-shadow:-4px_9px_0px_#000000]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >SHORT COMICS</h2>
-                        <div class="image w-full h-auto relative flex justify-center ">
-                            <img src="./assets/images/$NARTO_comics3.png" alt="" class="w-[100%] max-w-[950px] h-auto relative object-contain">
-                        </div>
-                        <p class="text-black text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Memes to Sher</p>
-                        <button id="button3" class="font-single mx-auto my-[1rem] text-outlineBlack-btn_narto  text-white bg-[#FF910A] rounded-full border-black border-[4px] lg:border-[7px] py-[.25rem] px-[1.5rem] lg:py-[.5rem] lg:px-[2.5rem] text-[1.75rem] md:text-[2rem] xl:text-[3.5rem] 2xl:text-[3.5rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >GET MEMES</button>
-                        <p class="text-center mx-auto w-[90%] sm:w-[60%] xl:w-[63%] text-[1.2rem] md:text-[1.55rem] 2xl:text-[3rem]"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        >Use aur meme chenel to sher
-                            aur fun content oll over yor inturnet!</p>
-                    </div>
-                </swiper-slide> 
-                
-              </swiper-container>
-         </div>
+        <div class="howto flex_center flex-col w-full relative gap-4">
+          <h2 class="carumba_font text-[40px] lg:text-[110px] bold_shadow">
+            How To Buy
+          </h2>
 
- 
-        <section class="question  bg-[#E1ECF7] w-full py-[40px] px-[1.5rem] xs:py-[80px]">
-            <div class="flex justify-between flex-col items-center max-w-[1300px] md:flex-row mx-auto ">
-                <h2 class="font-single text-[2.5rem] leading-[1.2] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.75rem] text-white text-outlineBlack-btn_narto  [text-shadow:-2px_3px_0px_#000000] md:[text-shadow:-2px_6px_0px_#000000]  xl:[text-shadow:-3px_6px_0px_#000000]  text-center md:!text-left mb-[2rem] md:mb-[0] xl:w-[40%]" data-aos="fade-right">TRADE YOUR QUESTIONS <br class="xl:block hidden">FOR ANSWERS</h2>
-                <div class="question relative xl:h-auto w-full md:w-auto  flex flex-col items-center justify-center gap-3 ">
-
-                    <div class="w-[90%] md:w-[400px] lg:w-[571px] h-[auto] relative " data-aos="fade-up"  data-aos-delay="100">
-                        <div class="faq rounded-[32px] h-full py-[.5rem] lg:py-[.75rem] md:rounded-[40px] border-[2px] border-black [box-shadow:-4px_6px_0px_#000000] bg-white px-[2rem]" >
-                            <button class="head relative w-full flex items-center justify-between ">
-                                <h4 class="text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] xl:text-[1.75rem] text-black tracking-tight leading-[1]">WHO IS $NARTO?</h4>
-                                <div class="btn-question w-[32px] ss::w-[40px] md:w-[50px] h-[32px] ss::h-[40px] md:h-[50px] rounded-full  border-[3px] border-black relative flex items-center bg-[#FFDD71]">
-                                    <span class="w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black"></span>
-                                    <span class="min w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black transition-all duration-300  rotate-90"></span>
-                                </div>
-                            </button>
-                            <div id="answer1" class="answer duration-[400ms]  w-full relative overflow-hidden">
-                               <p class="duration-[400ms] text-[1rem] xl:text-[1.25rem]"> one uf the bes sellin manga uf oll time made its debut on shitcuin availabul on Solana. we drem to become hukage uf Solana Datebayuuuuu  !!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" w-[90%] md:w-[400px] lg:w-[571px] h-[auto] relative " data-aos="fade-up"  data-aos-delay="100">
-                        <div class="faq rounded-[32px] h-full py-[.5rem] lg:py-[.75rem] md:rounded-[40px] border-[2px] border-black [box-shadow:-4px_6px_0px_#000000] bg-white px-[2rem]" >
-                            <button class="head relative w-full flex items-center justify-between ">
-                                <h4 class="text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] xl:text-[1.75rem] text-black tracking-tight leading-[1]">WHAT CHAIN IS <span class="text-[#FF910A]">$NARTO</span> ON?</h4>
-                                <div class="btn-question w-[32px] ss::w-[40px] md:w-[50px] h-[32px] ss::h-[40px] md:h-[50px] rounded-full  border-[3px] border-black relative flex items-center bg-[#FFDD71]">
-                                    <span class="w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black"></span>
-                                    <span class="min w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black transition-all duration-300  rotate-90"></span>
-                                </div>
-                            </button>
-                            <div id="answer2" class="answer duration-[400ms]  w-full relative overflow-hidden">
-                               <p class="duration-[400ms] text-[1rem] xl:text-[1.25rem]"> Yu ken find $NARTO on Solana
-                            </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" w-[90%] md:w-[400px] lg:w-[571px] h-[auto] relative " data-aos="fade-up"  data-aos-delay="200">
-                        <div class="faq rounded-[32px] h-full py-[.5rem] lg:py-[.75rem] md:rounded-[40px] border-[2px] border-black [box-shadow:-4px_6px_0px_#000000] bg-white px-[2rem]" >
-                            <button class="head relative w-full flex items-center justify-between ">
-                                <h4 class="text-[1.125rem] md:text-[1.25rem] lg:text-[1.5rem] xl:text-[1.75rem] text-black tracking-tight leading-[1]">HOW I CAN BUY <span class="text-[#FF910A]">$NARTO</span> </h4>
-                                <div class="btn-question w-[32px] ss::w-[40px] md:w-[50px] h-[32px] ss::h-[40px] md:h-[50px] rounded-full  border-[3px] border-black relative flex items-center bg-[#FFDD71]">
-                                    <span class="w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black"></span>
-                                    <span class="min w-[60%] h-[3px] ss:h-[4px] md:h-[8px] rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 inline-block bg-black transition-all duration-300  rotate-90"></span>
-                                </div>
-                            </button>
-                            <div id="answer3" class="answer duration-[400ms]  w-full relative overflow-hidden">
-                               <p class="duration-[400ms] text-[1rem] xl:text-[1.25rem]">To buy $NARTO, make sure you download the  Phantom app (or browser extension) for your phone. Then, simply use Solana and trade through a Solana-based DEX like Raydium or Orca. It's quick and easy!"</p>
-                            </div>
-                        </div>
-                    </div>
-               
-                </div>
-            </div>
-        </section>
-
-        <section class="footer_section  h-[700px] 2xl:h-[850px] relative w-full bg-[#E1ECF7] overflow-hidden  pb-0 md:!pb-[80px]  md:px-[2rem] lg:px-[4rem] font-single">
-            
-            <div class="relative z-[1] flex justify-center md:justify-end w-full">
-            <div class="text-center md:!text-right flex flex-col items-center md:items-end">
-                <h2 class="font-single text-[5rem] leading-[1] lg:text-[90px] xl:text-[122px] text-[#FF910A] text-outlineBlack-exbold [text-shadow:-1px_3px_0px_#000000] xl:[text-shadow:-6px_9px_0px_#000000]  tracking-tight"
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="100">
-                    SOCIALS
-                </h2>
-                <h5 class=" text-[24px] xl:text-[28px] 2xl:text-[2.5rem] text-[#fff] text-outlineBlack-thin-p font-[500] tracking-tight my-[.5rem] leading-[1] [text-shadow:-1px_2px_0px_#000000] 2xl:[text-shadow:-1px_3px_0px_#000000]"  
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="200">JOIN THE $NARTO COMMUNITY</h5>
-                <h5 class="font-milky text-[24px] md:text-[32px] xl:text-[35px] text-[#3A80FE]  text-outlineBlack-thin-p [text-shadow:-1px_1px_0px_#000000] md:[text-shadow:-1px_2px_0px_#000000] mb-4" 
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="300">support@nartomemecoin.com</h5>
-                <div class="flex items-center gap-4 justify-center md:justify-end mb-[2rem] lg:mb-[3rem]">
-                   <div  data-aos="fade-left"
-                   data-aos-duration="500"
-                   data-aos-delay="100">
-                    <a href="https://web.telegram.org/" target="_blank" rel="noreferrer" class=" transition-all duration-300 hover:shadow-none w-[50px] lg:w-[65px] xl:w-[88px] h-[50px] lg:h-[65px] xl:h-[88px] rounded-[12px] lg:rounded-[20px] bg-white  border-[3px] border-black [box-shadow:-4px_6px_0px_#000000] flex items-center justify-center"
-                   >
-                        <img src="./assets/icons/telegram-logo.svg" class="w-[32px] lg:w-[55px] object-contain " alt="telegram">
-                    </a>
-                   </div>
-                     <div data-aos="fade-left"
-                     data-aos-duration="500"
-                     data-aos-delay="200">
-                        <a href="https://x.com/" target="_blank" rel="noreferrer" class="transition-all duration-300 hover:shadow-none w-[50px] lg:w-[65px] xl:w-[88px] h-[50px] lg:h-[65px] xl:h-[88px] rounded-[12px] lg:rounded-[20px] bg-white  border-[3px] border-black [box-shadow:-4px_6px_0px_#000000] flex items-center justify-center"
-                        >
-                            <img src="./assets/icons/twitter-logo.svg" class="w-[32px] lg:w-[55px] object-contain" alt="">
-                        </a>
-                     </div>
-                </div>
-
-                <div class="inline-block mb-[3rem] md:mb-[4rem] lg:mb-[6rem]" data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-delay="100">
-                            <a href="#"   class="font-milky bg-[#fff] pl-2 pr-4 py-1 lg:py-2 rounded-full flex items-center gap-3 border-[5px] border-black [box-shadow:-4px_6px_0px_#000000] text-white transition-all duration-300 hover:shadow-none" 
-                            >
-                                <img src="./assets/images/$narto_naruto.png" class="w-[30px] rounded-full border-black border-[2px] lg:w-[45px]" alt="">
-                                <div class="text-[20px] sm:text-[28px] md:text-[30px] xl:text-[39px] text-[#3A80FE] text-outlineBlack-btn_narto">BUY $NARTO</div>
-                            </a>
-                </div> 
-           </div>
-           </div>
-            <div class="image-footer w-full bottom-0 left-0 absolute h-full">
-                <img  src="./assets/images/narto_footer.png" class="w-[400px] md:w-[600px] xl:w-[900px] 2xl:w-[1200px] xl:bottom-[-100px] 2xl:bottom-[-200px] h-auto absolute object-contain bottom-0 left-[-2rem] sm:left-[2rem] z-10" alt="narto" 
-                data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="100">
-                <div class="bg-[#A6C2FA] w-full h-[200px] absolute bottom-0 left-0 z-0"></div>
+          <div class="w-[90%] h-auto sm:w-[400px] lg:w-[400px] relative">
+            <!-- bg -->
+            <div class="bg w-full h-auto relative">
+              <img
+                src="./assets/images/bgHowto.svg"
+                alt="bghowto"
+                class="w-full"
+              />
             </div>
 
-        </section>
+            <!-- how to content -->
+            <div
+              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[4vw] text-[22px] lg:text-[25px] flex flex-col gap-7 leading-[1]"
+            >
+              <p>
+                <span class="font-semibold text-[40px] lg:text-[32px]"
+                  >1 :</span
+                >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <p>
+                <span class="font-semibold text-[40px] lg:text-[32px]"
+                  >2 :</span
+                >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <p>
+                <span class="font-semibold text-[40px] lg:text-[32px]"
+                  >3 :</span
+                >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <p>
+                <span class="font-semibold text-[40px] lg:text-[32px]"
+                  >4 :</span
+                >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
 
+          <div
+            class="btns flex_center gap-6 carumba_font text-[25px] lg:text-[36px]"
+          >
+            <button
+              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white"
+            >
+              $Buy
+            </button>
 
+            <button
+              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white"
+            >
+              Chart
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- line -->
+      <div class="line w-full overflow-hidden h-[50px] min-[2100px]:h-[170px] relative flex_center">
+        <div class="w-[110%] h-full absolute top-0 flex_center ">
+          <img
+            src="./assets/images/footerLine.svg"
+            alt="footer"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+
+      <footer class="relative w-full flex flex-col items-center gap-4">
+        <!-- content -->
+        <div class="logo w-[200px] h-auto relative">
+          <img src="./assets/images/logo.png" alt="logo" class="w-full" />
+
+          <img
+            src="./assets/images/bgLogo.svg"
+            alt=""
+            class="w-full h-full absolute left-0 top-0"
+          />
+        </div>
+
+        <!-- social -->
+        <div class="flex_center flex-wrap gap-7 w-full">
+          <a
+            href="#"
+            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px]"
+          >
+            <span class="w-full h-full rounded-full flex_center">
+              <img
+                src="./assets/images/telegram.svg"
+                alt="telegram"
+                class="relative z-10 w-[90%]"
+              />
+              <img
+                src="./assets/images/bgSocial.svg"
+                alt="bgSocial"
+                class="left-0 top-0 z-0 w-full h-full absolute"
+              />
+            </span>
+          </a>
+          <a
+            href="#"
+            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px]"
+          >
+            <span class="w-full h-full rounded-full flex_center">
+              <img
+                src="./assets/images/twitter.svg"
+                alt="twitter"
+                class="relative z-10 w-[70%]"
+              />
+              <img
+                src="./assets/images/bgSocial.svg"
+                alt="bgSocial"
+                class="left-0 top-0 z-0 w-full h-full absolute"
+              />
+            </span>
+          </a>
+        </div>
+
+        <div
+          class="contract w-[90%] md:w-[45%] lg:w-[50%] max-w-[1000px] h-[100px] flex_center relative"
+        >
+          <img
+            src="./assets/images/border1.svg"
+            alt="border"
+            class="w-full h-full absolute left-0 top-0"
+          />
+
+          <div class="w-full h-full flex_center gap-7 z-10 relative ">
+            <p data-set="00000000000000000000000000"  class="copy-box__text text-[14px] lg:text-[22px]">00000000000000000000000000</p>
+            <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
+              <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
+            </button>
+          </div>
+        </div>
+
+        <span
+          class="bg-black text-white w-full text-center leading-[1] py-[10px] carumba_font text-[40px]"
+          >Magic Binance 2025. ALL RIGHTS RESERVED.</span
+        >
+      </footer>
     </div>
-
-
-     <!-- scroll magic -->
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
-
-    <!-- swiper slider  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-     <!-- scripts -->
-    <script src="./assets/js/script.js"></script>
-</body>
+    <script src="./assets/index.js"></script>
+  </body>
 </html>
