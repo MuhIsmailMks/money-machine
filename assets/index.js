@@ -5,36 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         once: true,
     }); 
 
-    // const items = document.querySelectorAll('.wrapper .item');
-    // const totalItems = items.length; 
-    // const animationDuration = 30;  
 
-    // items.forEach((item, i) => { 
-    //     const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
-    //     item.style.animationDelay = `${delay}s`;
-    // });
-
-
-    // const images = [
-    //     "./assets/images/bg1.png",
-    //     "./assets/images/bg2.png", 
-    //     "./assets/images/bg3.png" 
-    // ];
-
-    // let currentIndex = 0;
-    // const imageElement = document.getElementById("bgImage");
-
-    // function changeBackground() {
-    //     currentIndex = (currentIndex + 1) % images.length; 
-
-    //     setTimeout(() => {
-    //         imageElement.src = images[currentIndex];  
-    //         imageElement.style.opacity = "0.7";  
-    //     }, 1000);
-    // }
-
-    // setInterval(changeBackground, 800); 
-
+    // star animation
     const container = document.querySelector(".stars-container");
     const starImage = "./assets/images/star.png"; 
  
@@ -59,6 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
        container.appendChild(star);
    }
+
+
+
+    //    memes slider
+    const items = document.querySelectorAll('.wrapper .item');
+    const totalItems = items.length; 
+    const animationDuration = 30;  
+
+    items.forEach((item, i) => { 
+        const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
+        item.style.animationDelay = `${delay}s`;
+    });
+
+
 
 });
 
