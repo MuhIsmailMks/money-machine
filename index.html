@@ -30,11 +30,11 @@
 
   <body class="flex justify-center">
     <div
-      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-[80px] z-10"
+      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-[80px] xl:gap-[110px] z-10"
     >
       <!-- navbar -->
       <nav
-        class="w-full z-[999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[.5rem] xl:px-[2rem]"
+        class="w-full z-[999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[.5rem] xl:px-[2rem]"  data-aos="fade-down" data-aos-duration="900" data-aos-delay="100"
       >
         <div
           class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[70%] justify-between w-full max-w-[100%] xl:max-w-[1500px] nav_shadow rounded-lg md:rounded-[30px] max-lg:px-6"
@@ -186,10 +186,10 @@
           <img
             src="./assets/images/hero.png"
             alt="hero"
-            class="w-[80%] lg:w-[600px]"
+            class="w-[80%] lg:w-[600px] float_animation"
           />
           <div
-            class="relative lg:absolute right-[0%] lg:top-[50%] bg-white border-black border-2 rounded-3xl w-[400px] h-auto flex_center flex-col p-4 gap-5"
+            class="relative lg:absolute right-[0%] lg:top-[50%] bg-white border-black border-2 rounded-3xl w-[400px] h-auto flex_center flex-col p-4 gap-5"  data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200"
           >
             <h1
               class="text-center text-[20px] md:text-[25px] leading-[1] max-md:hidden dmsans_font font-semibold"
@@ -210,17 +210,17 @@
         class="w-[90%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
       >
         <div
-          class="w-[90%] md:w-[60%] xl:w-[35%] flex_center relative py-[10px]"
+          class="w-[90%] md:w-[60%] xl:w-[35%] flex_center relative py-[10px] overflow-hidden"
         >
           <img
             src="./assets/images/about.gif"
             alt=""
-            class="w-[96%] relative z-0"
+            class="w-[96%] relative z-0"   data-aos="fade-right" data-aos-duration="900" data-aos-delay="100"
           /> 
         </div>
 
         <div
-          class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col gap-4 text-[#000]"
+          class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col gap-4 text-[#000]"  data-aos="fade-left" data-aos-duration="900" data-aos-delay="100"
         >
           <h2 class="w-full text-center lg:text-left text-[50px] lg:leading-[1]">
             About
@@ -235,19 +235,20 @@
         </div>
       </section>
  
-            <!-- tokenomics -->
+        <!-- tokenomics -->
       <section
         id="tokenomics"
         class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
       >
         <div class="howto flex_center flex-col w-full relative gap-4">
           <!-- title -->
-          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold">
+          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold" 
+      data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
             Tokenomics
           </h2>
 
           <div class="w-full flex_center flex-wrap gap-6 px-4">
-            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto"  data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="200">
               <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 📊 Supply</h3>
               - Circulating Supply: Dynamic, depends on minted and burned tokens
               <br>
@@ -255,7 +256,7 @@
               <br>
               - Stability: Maintained through over-collateralization and liquidation mechanisms
             </div>
-            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto" data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="300">
               <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 💠 Distribution</h3>
               - No pre-mine or team allocation.
               <br>
@@ -264,7 +265,7 @@
               - Fair and transparent minting process through the Abracadabra protocol.
 
             </div>
-            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto" data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="300">
               <h3 class="w-full text-center text-[20px] lg:text-[30px]"> ⚡ Utility</h3>
              - Stable medium of exchange across DeFi platforms.
              <br>
@@ -280,10 +281,9 @@
       </section>
 
       <!-- contact, supply, liqiu, tax -->
-      <section
-        class="w-[90%] flex_between flex-wrap gap-4 md:gap-7 max-xl:justify-center xl:max-w-[1500px] text-white"
-      >
-        <div class="w-auto lg:w-full flex_center">
+      <section class="w-[90%] flex_between flex-wrap gap-4 md:gap-7 max-xl:justify-center xl:max-w-[1500px] text-white" >
+
+        <div class="w-auto lg:w-full flex_center" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="200">
           <div
             class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative text-[#fff] bg-[#2170FF] rounded-full"
           >
@@ -306,17 +306,17 @@
         </div>
 
         <div
-          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
-        >
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300">
           <div
-            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
-          >
-            <p><span class="font-semibold">Supply : </span> 10 Million</p>
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]" >
+            <p>
+              <span class="font-semibold">Supply : </span> 10 Million
+            </p>
           </div>
         </div>
 
         <div
-          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300"
         >
           <div
             class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
@@ -326,7 +326,7 @@
         </div>
 
         <div
-          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300"
         >
           <div
             class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
@@ -334,6 +334,7 @@
             <p><span class="font-semibold">LP : </span>Liquidity Burnt</p>
           </div>
         </div>
+
       </section>
 
       <!-- how to buy -->
@@ -344,21 +345,21 @@
         <div class="howto flex_center flex-col w-full relative gap-4 px-4">
             
           <!-- title -->
-          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold">
+          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="100">
             How To Buy
           </h2>
 
           <!-- how to content -->
            <div class="relative w-full flex_center gap-4 flex-wrap">
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="200">
               <h3 class="w-full text-[20px] lg:text-[30px]"> STEP 1: Get Ethereum (ETH)</h3>
              Buy ETH from a centralized exchange (Binance, Coinbase, Kraken, etc.) or have it in your crypto wallet (like MetaMask).
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="300">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 2: Connect Your Wallet</h3>
             Open a DeFi platform that supports $MIM (e.g., Uniswap, Curve, or Abracadabra). Connect your wallet (MetaMask, WalletConnect, etc.).
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="400">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 3: Swap ETH for MIM</h3>
            - Choose ETH as the token you want to trade.
            <br>
@@ -366,14 +367,14 @@
            <br>
           - Enter the amount and confirm the transaction.
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="500">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 4: Confirm & Store Safely</h3>
            Once the swap is complete, $MIM will appear in your wallet. Make sure you add the official contract address to track your balance correctly.
              </div>
            </div>
             
           <div
-            class="btns flex_center gap-6 carumba_font text-[18px] lg:text-[26px]"
+            class="btns flex_center gap-6 carumba_font text-[18px] lg:text-[26px]" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="200"
           >
             <a href="#"
               class="link box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#2170FF] text-white flex_center"
