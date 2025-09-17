@@ -11,490 +11,448 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
-    <title>magic binance coin</title>
+
+    <title>Money Machine</title>
   </head>
 
   <body class="flex justify-center">
-
-    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-10 lg:gap-[80px] z-10" >
-
-      <!-- social -->
-      <div class="w-full flex_center gap-4 flex-col"> 
-        <div class="flex_center flex-wrap gap-7 w-full">
-          <a target="_blank"
-            href="https://web.telegram.org/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+    <div
+      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-[80px] z-10"
+    >
+      <!-- navbar -->
+      <nav
+        class="w-full z-[999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[1rem] xl:px-[2rem]"
+      >
+        <div
+          class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[70%] justify-between w-full max-w-[100%] xl:max-w-[1500px] nav_shadow rounded-lg md:rounded-[30px] max-lg:px-6"
+        >
+          <div
+            class="left flex relative z-10 justify-center items-center text_nav text-[15px] md:text-[30px]"
           >
-            <span class="w-full h-full rounded-full flex_center">
-              <img
-                src="./assets/images/telegram.svg"
-                alt="telegram"
-                class="relative z-10 w-[90%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
-            </span>
-          </a>
-          <a target="_blank"
-            href="https://x.com/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
+            <div class="logo flex_center gap-2">
+              <span
+                class="w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black flex_center overflow-hidden"
+              >
+                <img
+                  src="./assets/images/logo.png"
+                  alt="logo"
+                  class="w-[130px] h-auto object-cover"
+                />
+              </span>
+              <p class="text-sm">Money Machine</p>
+            </div>
+          </div>
+
+          <div
+            class="center absolute left-[50%] translate-x-[-50%] top-0 h-full w-[100%] z-0 justify-center flex items-center text-black"
           >
-            <span class="w-full h-full rounded-full flex_center">
+            <ul
+              class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[1rem] link_none"
+            >
+              <li class="list-none">
+                <a href="#about" class="text_nav text-[18px]">
+                  About
+                </a>
+              </li>
+
+              <li class="list-none">
+                <a href="#tokenomics" class="text_nav text-[18px]">
+                  Tokenomics
+                </a>
+              </li>
+
+              <li class="list-none">
+                <a href="#howtobuy" class="text_nav text-[18px]">
+                  How To Buy
+                </a>
+              </li>
+ 
+            </ul>
+          </div>
+
+          <div
+            class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"
+          >
+            <a
+              href="#"
+              class="w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px] bg-[#000] rounded-[10px] md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center btn_hover border-[#000] border-[1px] duration-300 text-white font-semibold hover:text-black hover:bg-white"
+            >
+              Join us
+            </a>
+
+            <a
+              target="_blank"
+              href="https://x.com/"
+              class="rounded-full h-[50px] aspect-square bg-black flex_center duration-150 hover:scale-110 hidden md:flex"
+            >
               <img
                 src="./assets/images/twitter.svg"
                 alt="twitter"
-                class="relative z-10 w-[70%]"
+                class="w-[70%]"
               />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://web.telegram.org"
+              class="rounded-full h-[50px] aspect-square bg-black flex_center duration-150 hover:scale-110 hidden md:flex"
+            >
               <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
+                src="./assets/images/telegram.svg"
+                alt="telegram"
+                class="w-[80%]"
               />
-            </span>
-          </a>
-          <a target="_blank"
-            href="https://bscscan.com/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
-          >
-            <span class="w-full h-full rounded-full flex_center">
-              <img
-                src="./assets/images/bscscan.png"
-                alt="bscscan"
-                class="relative z-10 w-[60%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
-            </span>
-          </a>
-          <a target="_blank"
-            href="https://www.bnbchain.org/en"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
-          >
-            <span class="w-full h-full rounded-full flex_center">
-              <img
-                src="./assets/images/BNBCHAIN.webp"
-                alt="BNBCHAIN"
-                class="relative z-10 w-[70%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
-            </span>
-          </a>
-          <a target="_blank"
-            href="https://www.binance.com/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
-          >
-            <span class="w-full h-full rounded-full flex_center">
-              <img
-                src="./assets/images/binance.webp"
-                alt="binance"
-                class="relative z-10 w-[70%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
-            </span>
-          </a>
+            </a>
+
+            <div class="menu-button relative">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- logo -->
-      <div
-        class="relative md:absolute md:left-[50px] md:top-[20px] flex_center max-lg:flex-col"
-      >
-        <img
-          src="./assets/images/logo.png"
-          alt="logo"
-          class="w-[100px] h-auto object-contain rounded-full bg-black"
-        /> 
-      </div>
-
-      <h1 class="carumba_font text-center text-[19vw]  bold_shadow leading-[1] md:hidden text-[#F4B73F]"> Magic Binance Coin</h1>
-
-      <!-- nav -->
-       <div class="relative md:absolute md:right-[40px] md:top-[50px] flex_center gap-4 w-full md:w-[30%] text-[30px] md:flex-col xl:flex-row   text-[#F4B73F]">
-          <li class="text-center md:text-right md:w-full xl:w-auto">
-            <a href="#about">About</a>
-          </li>
-          <li class="text-center md:text-right md:w-full xl:w-auto">
-            <a href="#HowToBuy">How To Buy</a>
-          </li> 
-          
-          <li class="text-center md:text-right md:w-full xl:w-auto">
-            <a href="#memes">Memes</a>
-          </li>
-          <li class="text-center md:text-right md:w-full xl:w-auto">
-            <a href="#social">Social</a>
-          </li> 
-       </div>
+        <!-- menu -->
+        <div
+          class="menu menu_drop nav_shadow absolute hidden top-[140%] right-[3rem] w-[190px] flex justify-center border-black border-[2px] rounded-[12px] bg-[#000] h-auto py-4 text-white"
+        >
+          <ul
+            class="flex items-center relative gap-[2rem] link_none flex-col justify-center"
+          > 
+            <li class="list-none">
+              <a href="#about" class="text_nav text-[14px] md:text-[20px]"
+                >About</a
+              >
+            </li>
+            <li class="list-none">
+              <a href="#tokenomics" class="text_nav text-[14px] md:text-[20px]"
+                >Tokenomics</a
+              >
+            </li>
+            <li class="list-none">
+              <a href="#howtobuy" class="text_nav text-[14px] md:text-[20px]"
+                >How To Buy</a
+              >
+            </li>
+            <li class="w-full flex_center gap-4 flex md:hidden">
+              <a
+                target="_blank"
+                href="https://x.com/"
+                class="rounded-full h-[40px] aspect-square bg-white flex_center duration-150 hover:scale-110"
+              >
+                <img
+                  src="./assets/images/twitter.svg"
+                  alt="twitter"
+                  class="w-[70%] black-icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://web.telegram.org"
+                class="rounded-full h-[40px] aspect-square bg-white flex_center duration-150 hover:scale-110"
+              >
+                <img
+                  src="./assets/images/telegram.svg"
+                  alt="telegram"
+                  class="w-[80%] black-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       <!-- hero -->
-      <section id="home" class="w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] md:pt-10">
+      <section
+        id="home"
+        class="w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] lg:mt-[-100px]"
+      >
+        <div
+          class="w-full md:w-[60%] xl:w-[65%] flex_center flex-wrap relative pt-2 lg:pt-[20px] pb-[10px]"
+        >
+          <img
+            src="./assets/images/hero.png"
+            alt="hero"
+            class="w-[80%] lg:w-[600px]"
+          />
+          <div
+            class="relative lg:absolute right-[0%] lg:top-[50%] bg-white border-black border-2 rounded-3xl w-[400px] h-auto flex_center flex-col p-4 gap-5"
+          >
+            <h1
+              class="text-center text-[20px] md:text-[25px] leading-[1] max-md:hidden dmsans_font font-semibold"
+            >
+              Magic Internet Money $MIM
+            </h1>
+            <p class="text-center">
+              Magic Internet Money (MIM) is a USD-pegged stablecoin you can
+              mint, trade, and use across DeFi.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <h1 class="carumba_font text-center text-[70px] md:text-[120px] bold_shadow leading-[1] max-md:hidden text-[#F4B73F]"> Magic Binance Coin</h1>
+      <!-- about -->
+      <section
+        id="about"
+        class="w-[90%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
+      >
+        <div
+          class="w-[90%] md:w-[60%] xl:w-[35%] flex_center relative py-[10px]"
+        >
+          <img
+            src="./assets/images/about.gif"
+            alt=""
+            class="w-[96%] relative z-0"
+          /> 
+        </div>
 
-        <div class="w-[90%] md:w-[60%] xl:w-[65%] flex_center relative pt-2 lg:pt-[20px] pb-[10px]"  >
-        <img
-          src="./assets/images/gif2.gif"
-          alt=""
-          class="w-[96%] relative z-0"
-        />
-        <img
-          src="./assets/images/borderGif.svg"
-          alt=""
-          class="absolute left-0 top-0 w-full h-full mirrorY z-10"
-        />
+        <div
+          class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col gap-4 text-[#000]"
+        >
+          <h2 class="w-full text-center lg:text-left text-[50px] lg:leading-[1]">
+            About
+          </h2>
+          <p class="text-[22px]">
+            Magic Internet Money (MIM) is a decentralized stablecoin pegged to
+            the US Dollar. Built on the Abracadabra protocol, it allows users to
+            mint MIM by using interest-bearing crypto assets as collateral. MIM
+            brings stability, flexibility, and true ownership in the world of
+            DeFi.
+          </p>
+        </div>
+      </section>
+ 
+            <!-- tokenomics -->
+      <section
+        id="tokenomics"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
+      >
+        <div class="howto flex_center flex-col w-full relative gap-4">
+          <!-- title -->
+          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold">
+            Tokenomics
+          </h2>
+
+          <div class="w-full flex_center flex-wrap gap-6 px-4">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 📊 Supply</h3>
+              - Circulating Supply: Dynamic, depends on minted and burned tokens
+              <br>
+              - Max Supply: Unlimited (backed by collateralized assets)
+              <br>
+              - Stability: Maintained through over-collateralization and liquidation mechanisms
+            </div>
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 💠 Distribution</h3>
+              - No pre-mine or team allocation.
+              <br>
+              - All MIM enters circulation only when users deposit supported assets as collateral.
+              <br>
+              - Fair and transparent minting process through the Abracadabra protocol.
+
+            </div>
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> ⚡ Utility</h3>
+             - Stable medium of exchange across DeFi platforms.
+             <br>
+             - Trading pair on multiple DEX and CEX.
+             <br>
+             - Borrowing & lending opportunities. 
+            </div>
+          </div>
+
+
         </div>
 
       </section>
 
-      <!-- contract -->
-      <div
-        class="contract w-[90%] md:w-[45%] lg:w-[50%] max-w-[1000px] h-[100px] flex_center relative text-[#F4B73F]"
-      >
-        <img
-          src="./assets/images/border1.svg"
-          alt="border"
-          class="w-full h-full absolute left-0 top-0"
-        />
-
-        <div class="w-full h-full flex_center gap-7 z-10 relative ">
-          <p data-set="00000000000000000000000000" class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[24px] lg:text-[32px]">00000000000000000000000000</p>
-          <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
-            <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
-          </button>
-        </div>
-      </div>
-
-      <!-- supply, liqiu, tax -->
+      <!-- contact, supply, liqiu, tax -->
       <section
-        class="w-[90%] flex_between flex-wrap md:gap-7 max-xl:justify-center xl:max-w-[2000px] text-[#F4B73F]"
+        class="w-[90%] flex_between flex-wrap gap-4 md:gap-7 max-xl:justify-center xl:max-w-[1500px] text-white"
       >
-        <div
-          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
-        >
-          <img
-            src="./assets/images/border2.svg"
-            alt="border"
-            class="w-full h-full absolute left-0 top-0"
-          />
-
+        <div class="w-auto lg:w-full flex_center">
           <div
-            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
+            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative text-[#fff] bg-[#2170FF] rounded-full"
+          >
+            <div
+              class="w-full h-full flex_center gap-7 z-10 relative dmsans_font"
+            >
+              <p
+                data-set="00000000000000000000000000"
+                class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[16px] lg:text-[20px]"
+              >
+                00000000000000000000000000
+              </p>
+              <button
+                class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address"
+              >
+                <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
+        >
+          <div
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
           >
             <p><span class="font-semibold">Supply : </span> 10 Million</p>
           </div>
         </div>
 
         <div
-          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
         >
-          <img
-            src="./assets/images/border2.svg"
-            alt="border"
-            class="w-full h-full absolute left-0 top-0 mirrorX"
-          />
-
           <div
-            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
           >
             <p><span class="font-semibold">Tax : </span>0%</p>
           </div>
         </div>
 
         <div
-          class="w-[90%] md:w-[45%] xl:w-[30%] h-[100px] relative flex_center"
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#2170FF] rounded-full"
         >
-          <img
-            src="./assets/images/border2.svg"
-            alt="border"
-            class="w-full h-full absolute left-0 top-0 mirrorY"
-          />
-
           <div
-            class="w-full flex_center gap-4 text-[28px] md:text-[27px] lg:text-[35px]"
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
           >
             <p><span class="font-semibold">LP : </span>Liquidity Burnt</p>
           </div>
         </div>
       </section>
 
-      <!-- about -->
-      <section id="about" class="w-[90%] flex_center gap-7 flex-wrap xl:max-w-[2000px]">
-              <div
-                class="w-[90%] md:w-[60%] xl:w-[45%] flex_center relative py-[10px]"
-              >
-                <img
-                  src="./assets/images/gif1.gif"
-                  alt=""
-                  class="w-[96%] relative z-0"
-                />
-                <img
-                  src="./assets/images/borderGif.svg"
-                  alt=""
-                  class="absolute left-0 top-0 w-full h-full z-10"
-                />
-              </div>
-      
-              <div class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col text-[#F4B73F]">
-                <h2 class="carumba_font bold_shadow text-[110px] lg:leading-[1]">
-                  About
-                </h2>
-                <p class="text-[22px] ">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
-                  deleniti. Corrupti, soluta dolor numquam voluptatibus officiis modi
-                  officia facilis necessitatibus quas consequuntur, impedit facere
-                  ullam distinctio porro aspernatur quidem. Mollitia! Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Sequi natus maiores
-                  impedit ipsum itaque sunt quos nihil, quis reiciendis odio velit
-                  possimus consequatur, doloremque quia numquam dolor laudantium minus
-                  nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minus molestias, neque ipsa ratione delectus aspernatur, quasi
-                  optio, voluptatibus assumenda ea rem! Rerum, animi libero dolorum
-                  eius amet possimus saepe voluptas.
-                </p>
-              </div>
-      </section>
-
       <!-- how to buy -->
-      <section id="HowToBuy" class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px] text-[#F4B73F]">
-
-        <div class="howto flex_center flex-col w-full relative gap-4">
-
+      <section
+        id="howtobuy"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
+      >
+        <div class="howto flex_center flex-col w-full relative gap-4 px-4">
+            
           <!-- title -->
-          <h2 class="carumba_font text-[70px] lg:text-[110px] bold_shadow">
+          <h2 class="dmsans_font text-[50px] lg:text-[70px] font-bold">
             How To Buy
           </h2>
 
-          <!-- sticker -->
-           <div class="sticker1 relative xl:absolute xl:left-[3%] min-[1500px]:left-[10%] w-[70%] md:w-[360px] flex_center ">
-             <img src="./assets/images/sticker1.gif" alt="sticker" class="w-full h-auto object-contain">
-           </div>
-
-           <div class="sticker2 max-xl:hidden absolute right-[3%] min-[1500px]:right-[10%] w-[360px] flex_center ">
-             <img src="./assets/images/sticker1.gif" alt="sticker" class="w-full h-auto object-contain">
-           </div>
-
           <!-- how to content -->
-          <div class="w-[90%] h-auto sm:w-[400px] lg:w-[400px] relative">
-
-            <!-- bg -->
-            <div class="bg w-full h-auto relative">
-              <img
-                src="./assets/images/bgHowto.svg"
-                alt="bghowto"
-                class="w-full"
-              />
-            </div>
-
-            <!-- how to content -->
-            <div
-              class="absolute left-0 top-0 z-10 text-white w-full h-full p-10 max-[400px]:text-[6vw] text-[29px] lg:text-[32px] flex flex-col gap-4 min-[400px]:gap-10 leading-[1] "
-            >
-              <p>
-                <span class="font-semibold text-[42px] lg:text-[32px]"
-                  >1 :</span
-                >
-                Create a Wallet (e.g Metamask)
-              </p>
-              <p>
-                <span class="font-semibold text-[42px] lg:text-[32px]"
-                  >2 :</span
-                >
-                Add BNB to your wallet
-              </p>
-              <p>
-                <span class="font-semibold text-[42px] lg:text-[32px]"
-                  >3 :</span
-                >
-                Copy and paste the contract address in the widget.
-              </p>
-              <p>
-                <span class="font-semibold text-[42px] lg:text-[32px]"
-                  >4 :</span
-                >
-                Swap BNB for $MAGIC
-              </p>
-              <p>
-                <span class="font-semibold text-[20px] lg:text-[32px] tracking-wide">We recommend setting your slippage to at least 2%</span
-                > 
-              </p>
-
-            </div>
-
-
-          </div>
-
+           <div class="relative w-full flex_center gap-4 flex-wrap">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+              <h3 class="w-full text-[20px] lg:text-[30px]"> STEP 1: Get Ethereum (ETH)</h3>
+             Buy ETH from a centralized exchange (Binance, Coinbase, Kraken, etc.) or have it in your crypto wallet (like MetaMask).
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 2: Connect Your Wallet</h3>
+            Open a DeFi platform that supports $MIM (e.g., Uniswap, Curve, or Abracadabra). Connect your wallet (MetaMask, WalletConnect, etc.).
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 3: Swap ETH for MIM</h3>
+           - Choose ETH as the token you want to trade.
+           <br>
+           - Select MIM as the token you want to receive.
+           <br>
+          - Enter the amount and confirm the transaction.
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 4: Confirm & Store Safely</h3>
+           Once the swap is complete, $MIM will appear in your wallet. Make sure you add the official contract address to track your balance correctly.
+             </div>
+           </div>
+            
           <div
-            class="btns flex_center gap-6 carumba_font text-[25px] lg:text-[36px]"
+            class="btns flex_center gap-6 carumba_font text-[18px] lg:text-[26px]"
           >
-            <button
-              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white"
+            <a href="#"
+              class="link box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#2170FF] text-white flex_center"
             >
               $Buy
-            </button>
+            </a>
 
-            <a href="https://www.dextools.io/app/en/ether/" target="_blank"
-              class="btnHow box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#ecba2e] text-white text-center"
+            <a
+              href="https://www.dextools.io/app/en/ether/"
+              target="_blank"
+              class="link box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#2170FF] text-white flex_center"
             >
               Chart
             </a>
           </div>
+ 
         </div>
       </section>
-
-      <!-- memes -->
-       <section id="memes" class="w-full flex_center gap-7 flex-col xl:max-w-[2000px] text-[#F4B73F]">
-        
-        <h2 class="carumba_font bold_shadow text-[110px] lg:text-[160px] lg:leading-[1]">
-          MEMES
-        </h2>
-
-        <div class="wrapper image_slider">
-            
-          <div class="item newitem1" style="background-color: red;">
-            <img src="./assets/images/meme1.jpg" alt="" class="w-full h-full">
-          </div>
-          
-          <div class="item newitem2" style="background-color: rgb(29, 6, 6);">
-            <img src="./assets/images/meme2.jpg" alt="" class="w-full h-full">
-          </div>
-          
-          <div class="item newitem3" style="background-color: rgb(105, 94, 94);">
-            <img src="./assets/images/meme3.jpg" alt="" class="w-full h-full">
-          </div>
-          
-          <div class="item newitem4" style="background-color: rgb(157, 255, 0);">
-            <img src="./assets/images/meme4.jpg" alt="" class="w-full h-full">
-          </div>
-
-          <div class="item item1" style="background-color: red;">
-            <img src="./assets/images/meme1.jpg" alt="" class="w-full h-full">
-          </div>
-
-          <div class="item item2" style="background-color: aqua;">
-            <img src="./assets/images/meme2.jpg" alt="" class="w-full h-full">
-          </div>
-          <div class="item item3" style="background-color: #15ff00;">
-            <img src="./assets/images/meme3.jpg" alt="" class="w-full h-full">
-          </div>
-          <div class="item item4" style="background-color: #00ffaa;">
-            <img src="./assets/images/meme4.jpg" alt="" class="w-full h-full">
-          </div>
  
-       </div>
-
-
-       </section>
-
-      <!-- line -->
-      <div class="line w-full overflow-hidden h-[50px] min-[2100px]:h-[170px] relative flex_center">
-        <div class="w-[110%] h-full absolute top-0 flex_center ">
-          <img
-            src="./assets/images/footerLine.svg"
-            alt="footer"
-            class="w-full h-auto"
-          />
-        </div>
-      </div>
-
-      <footer id="social" class="relative w-full flex flex-col items-center gap-4 lg:mt-[-70px]">
-        
+      <footer
+        id="social"
+        class="relative w-full flex flex-col items-center gap-4   bg-black pt-10"
+      >
         <!-- content -->
-        <div class="logo w-[200px] h-auto relative">
-          <img src="./assets/images/logo.png" alt="logo" class="w-full rounded-[10px] bg-black"/>
-
-          <!-- <img
-            src="./assets/images/bgLogo.svg"
-            alt=""
-            class="w-full h-full absolute left-0 top-0"
-          /> -->
-
+        <div class="logo w-[200px] h-auto relative flex_center flex-col">
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+            class="w-full rounded-[10px] bg-black"
+          />
+          <p class="text-white text-[19px]">Money Machine</p>
+ 
         </div>
+
+        <ul class="flex_center gap-7 flex-wrap text-white text-[18px] py-4">
+          <li class="link-hover"><a href="#home">Home</a></li>
+          <li class="link-hover"><a href="#about">About</a></li>
+          <li class="link-hover"><a href="#tokenomics">Tokenomics</a></li>
+          <li class="link-hover"><a href="#howtobuy">How To Buy</a></li>
+        </ul>
 
         <!-- social -->
         <div class="flex_center flex-wrap gap-7 w-full">
           <a
-          target="_blank"
+            target="_blank"
             href="https://web.telegram.org/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px]"
+            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px] bg-white rounded-full"
           >
             <span class="w-full h-full rounded-full flex_center">
               <img
                 src="./assets/images/telegram.svg"
                 alt="telegram"
-                class="relative z-10 w-[90%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
+                class="relative z-10 w-[80%] black-icon"
+              /> 
             </span>
           </a>
           <a
             href="https://x.com/"
-            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px]"
+            class="flex_center cursor-pointer duration-150 hover:scale-105 relative w-[60px] h-[60px]  bg-white rounded-full"
           >
             <span class="w-full h-full rounded-full flex_center">
               <img
                 src="./assets/images/twitter.svg"
                 alt="twitter"
-                class="relative z-10 w-[70%]"
-              />
-              <img
-                src="./assets/images/bgSocial.svg"
-                alt="bgSocial"
-                class="left-0 top-0 z-0 w-full h-full absolute"
-              />
+                class="relative z-10 w-[70%] black-icon"
+              /> 
             </span>
           </a>
         </div>
-
-        <div
-          class="contract w-[90%] md:w-[45%] lg:w-[50%] max-w-[1000px] h-[100px] flex_center relative"
-        >
-          <img
-            src="./assets/images/border1.svg"
-            alt="border"
-            class="w-full h-full absolute left-0 top-0"
-          />
-
-          <div class="w-full h-full flex_center gap-7 z-10 relative text-[#F4B73F]">
-            <p data-set="00000000000000000000000000"  class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[24px] lg:text-[32px]">00000000000000000000000000</p>
-            <button class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address">
-              <img src="./assets/images/copyIcon.svg" alt="copy w-full" />
-            </button>
-          </div>
-        </div>
-
+ 
         <span
-          class="bg-black text-white w-full text-center leading-[1] py-[10px] carumba_font text-[20px] lg:text-[40px]"
-          >Magic Binance 2025. ALL RIGHTS RESERVED.</span
+          class="bg-black text-white w-full text-center leading-[1] py-[10px] carumba_font text-[13px] lg:text-[16px]"
+          >Magic Internet Money 2025. ALL RIGHTS RESERVED.</span
         >
       </footer>
-
     </div>
 
     <!-- bg -->
-     <div class="w-full h-full fixed left-0 top-0 bg-[#fff]">
+    <!-- <div class="w-full h-full fixed left-0 top-0 bg-[#fff]">
          <img id="bgImage" src="./assets/images/banner.png" alt="" class="w-full h-full object-cover">
 
          <div class="blinks absolute left-0 top-0 w-full h-full z-[1]">
@@ -520,7 +478,7 @@
           <img src="./assets/images/binance.webp" alt="" class="w-full opacity-35 rotate-[-10deg] ">
          </div>
 
-     </div>
+     </div> -->
 
     <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

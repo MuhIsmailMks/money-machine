@@ -1,37 +1,14 @@
-@font-face {
-  font-family: "carumba";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/CarumbaPlain.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "comic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Comic.acf4b7e829f1fcdc78d4.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "comic2";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/comic2.woff2") format("truetype");
-  font-display: swap;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-.carumba_font {
-  font-family: "carumba", sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
-.comic_font {
-  font-family: "comic2", sans-serif;
+.dmsans_font {
+  font-family: "DM Sans", sans-serif;
 }
 
 .flex_center {
@@ -62,19 +39,23 @@ html {
   -o-transform: scaleX(-1);
 }
 
-body {
-  font-family: "comic2", sans-serif;
+.black-icon {
+  filter: invert(1);
 }
 
 .bold_shadow {
-  text-shadow: 0 5px 3px #ebba30;
+  text-shadow: 0 5px 3px #000000;
 }
 
 .box_shadow {
   box-shadow: 0 5px 0 black;
 }
 
-.thin_stroke{
+.box_shadow2 {
+  box-shadow: -3px 5px 0 black;
+}
+
+.thin_stroke {
   text-shadow: 0 2px 0 black;
 }
 
@@ -82,8 +63,56 @@ li {
   list-style: none;
 }
 
-/* how */
-.btns .btnHow {
+/* nav */
+
+/* menu button */
+.menu-button {
+  display: none;
+  overflow: hidden;
+
+  height: 35px;
+  width: 45px;
+
+  position: relative;
+
+  align-items: center;
+}
+
+.menu-button span {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button span:nth-child(1) {
+  top: 0;
+}
+
+.menu-button span:nth-child(2) {
+  position: relative;
+}
+
+.menu-button span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu-button.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 1rem;
+}
+
+.menu-button.active span:nth-child(2) {
+  width: 0%;
+}
+
+.menu-button.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 1rem;
+}
+
+.btns .link {
   transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
@@ -91,7 +120,7 @@ li {
   -o-transition: 0.2s ease-in;
 }
 
-.btns .btnHow:hover {
+.btns .link:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -99,64 +128,17 @@ li {
   -o-transform: scale(1.05);
 }
 
-
-/* memes */
-/* image slider */
-.wrapper{ 
-  width: 100%;
-  max-width: 2526px;
-  margin: auto;
-  height: 300px;  
-  overflow: hidden;
-  position: relative;   
+.link-hover {
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
 }
 
-.item{
-  width: 300px;
-  height: 100%; 
-  overflow: hidden;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  position: absolute;
-  left: calc(300px * 8);
-  animation: scrollLeft 30s linear infinite;
-  -webkit-animation: scrollLeft 30s linear infinite;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.link-hover:hover {
+  text-decoration: underline;
 }
-
-.wrapper .item::after{
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-
-  background-image: url('../images/memeborder.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 10;
-  pointer-events: none; 
-}
-
-@keyframes scrollLeft {
-  to{
-      left: -300px;
-  }
-}
-
-
-
-
-
-
 
 /* animation */
 .float_animation {
@@ -175,7 +157,6 @@ li {
   }
 }
 
-
 .stars-container {
   position: relative;
   width: 100%;
@@ -191,9 +172,42 @@ li {
 /* Animasi opacity */
 @keyframes twinkle {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
+  }
+}
+
+/* media queries */
+@media screen and (min-width: 1024px) {
+  .menu_drop {
+    display: none;
+    position: absolute;
+    z-index: -999;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-button {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu-button {
+    width: 27px;
+    height: 23px;
+  }
+
+  .menu-button.active span:nth-child(1) {
+    top: 0.6rem;
+  }
+
+  .menu-button.active span:nth-child(3) {
+    bottom: 0.7rem;
   }
 }
