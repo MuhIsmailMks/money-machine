@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         menuBtn.classList.toggle('active');
         menu.classList.toggle('hidden');
     });
-
-    // kalau klik link di dalam menu -> close menu
+  
+    // close menu
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menuBtn.classList.remove('active');
@@ -23,6 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // text slider
+    
+
+    const items = document.querySelectorAll('.wrapper .item');
+    const totalItems = items.length; 
+    const animationDuration = 30;  
+
+    items.forEach((item, i) => { 
+        const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
+        item.style.animationDelay = `${delay}s`;
+    });
 
 
 });
