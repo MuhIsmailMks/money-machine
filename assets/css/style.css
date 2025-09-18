@@ -167,6 +167,13 @@ li {
     translateX(6px) scale(1.05);
 }
 
+.nav-btn.menu_drop:hover:before { 
+  -webkit-transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
+  transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
+}
+
 /* animation */
 .float_animation {
   animation: float 3s ease-in-out infinite;
@@ -240,67 +247,4 @@ li {
 }
 
 
-
-/* text slider */
-.slide-container {
-  overflow: hidden;  
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 2526px;
-  margin: auto;
-  height: 50px;
-  position: relative;
-  
-}
-
-.item {
-  width: 200px;
-  height: 100%;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  position: absolute;
-  left: calc(200px * 18);
-  animation: scrollLeft 30s linear infinite;
-  -webkit-animation: scrollLeft 30s linear infinite;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.item h4 {
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  animation: text_animation 1s ease-in-out infinite;
-  font-weight: 800; 
-}
-
-.item:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-
-.wrapper:hover .item {
-  animation-play-state: paused;
-}
-
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
-}
+ 

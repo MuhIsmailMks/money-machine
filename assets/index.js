@@ -23,17 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // text slider
-    
+  
+// slider 
+const slideContainers = document.querySelectorAll('.slide-container');
+const animationDuration = 30;
 
-    const items = document.querySelectorAll('.wrapper .item');
-    const totalItems = items.length; 
-    const animationDuration = 30;  
+slideContainers.forEach(container => {
+  const items = container.querySelectorAll('.wrapper .item');
+  const totalItems = items.length;
 
-    items.forEach((item, i) => { 
-        const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
-        item.style.animationDelay = `${delay}s`;
-    });
+  items.forEach((item, i) => {
+    const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
+    item.style.animationDelay = `${delay}s`;
+  });
+});
 
 
 });
