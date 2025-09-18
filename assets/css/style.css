@@ -3,8 +3,8 @@ html {
 }
 
 @font-face {
-  font-family: 'MilkyNice'; /* Nama bebas */
-  src: url('../font/MilkyNice.otf') format('opentype');
+  font-family: 'MilkyNice';  
+  src: url('../font/MilkyNice-Clean.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
