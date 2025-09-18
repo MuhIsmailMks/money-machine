@@ -189,6 +189,15 @@ li {
     translateX(6px) scale(1.05);
 }
 
+/* icon hover */
+.icon-hover img{
+  transition: .2s ease-in;
+}
+
+.icon-hover:hover img{
+  transform: rotate(300deg);
+}
+
 /* animation */
 .float_animation {
   animation: float 3s ease-in-out infinite;
@@ -228,12 +237,12 @@ li {
 
 @media screen and (max-width: 500px) {
   .menu-button {
-    width: 27px;
-    height: 23px;
+    width: 24px;
+    height: 21px;
   }
 
   .menu-button.active span:nth-child(1) {
-    top: 0.6rem;
+    top: 0.4rem;
   }
 
   .menu-button.active span:nth-child(3) {
