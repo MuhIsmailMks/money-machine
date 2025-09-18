@@ -2,13 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'MilkyNice'; /* Nama bebas */
+  src: url('../font/MilkyNice.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "MilkyNice", sans-serif;
   font-weight: 600;
 }
 
 .dmsans_font {
-  font-family: "DM Sans", sans-serif;
+  font-family: "MilkyNice", sans-serif;
 }
 
 .flex_center {
