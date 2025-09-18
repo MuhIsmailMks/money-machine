@@ -44,12 +44,12 @@
           >
             <div class="logo flex_center gap-2">
               <span
-                class="w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full bg-black flex_center overflow-hidden"
+                class="w-[40px] md:w-[70px] aspect-square rounded-full bg-[#54D9EA] flex_center overflow-hidden"
               >
                 <img
                   src="./assets/images/logo.png"
                   alt="logo"
-                  class="w-[130px] h-auto object-cover"
+                  class="w-[70%] h-auto object-cover mirrorX"
                 />
               </span>
               <p class="text-sm">Money Machine</p>
@@ -178,15 +178,13 @@
       <!-- hero -->
       <section
         id="home"
-        class="w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] lg:mt-[-100px]"
+        class="relative  w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] xl:mt-[-150px] max-lg:pb-20"
       >
-        <div
-          class="w-full md:w-[60%] xl:w-[65%] flex_center flex-wrap relative pt-2 lg:pt-[20px] pb-[10px]"
-        >
+        <div class="relative w-full md:w-[60%] xl:w-[65%] flex_center flex-wrap pt-2 lg:pt-[20px] pb-[10px] z-10" >
           <img
             src="./assets/images/hero.png"
             alt="hero"
-            class="w-[80%] lg:w-[600px] float_animation"
+            class="w-[80%] lg:w-[500px] float_animation"
           />
           <div
             class="relative lg:absolute right-[0%] lg:top-[50%] bg-white border-black border-2 rounded-3xl w-[400px] h-auto flex_center flex-col p-4 gap-5"  data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200"
@@ -200,6 +198,37 @@
               Magic Internet Money (MIM) is a USD-pegged stablecoin you can
               mint, trade, and use across DeFi.
             </p>
+          </div>
+        </div>
+
+        <div class="machine-img absolute left-[-50%] lg:left-[-20%] w-[80%] lg:w-[400px] mirrorX">
+          <img src="./assets/images/logo.png" alt="logo" class="w-full rotate-[30deg]">
+        </div>
+
+        <p class="absolute right-0 top-0 lg:top-[10%] text-[18px] lg:text-[22px]">TOKEN ERC-20</p>
+
+        <div class="absolute bottom-0 w-full h-[200px flex justify-between items-center">
+          <p class="text-[13px] lg:text-[23px]">Explorador de blockchain, <br class="max-lg:hidden">analisis y servicios web</p>
+
+          <div
+            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative "
+          >
+            <div
+              class="w-full h-full flex_center gap-4 z-10 relative dmsans_font"
+            >
+          
+              <button
+                class="copy-btn  aspect-square lg:w-[50px] cursor-pointer copy_address bg-[#2170FF] rounded-full flex_center"
+              >
+                <img src="./assets/images/copyIcon.svg" alt="copy w-[50%]" />
+              </button>
+                <p
+                data-set="00000000000000000000000000"
+                class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[14px] lg:text-[16px] text-black"
+              >
+                000000....0000
+              </p>
+            </div>
           </div>
         </div>
       </section>

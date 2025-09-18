@@ -44,11 +44,12 @@ document.querySelectorAll(".copy_address").forEach((copybtn) => {
         let parent = this.closest("div");
         let textSpan = parent.querySelector(".copy-box__text");
         let addressText = textSpan.getAttribute("data-set");
+        let originalText = textSpan.innerHTML;
 
         textSpan.innerHTML = "COPIED";
 
         setTimeout(() => {
-            textSpan.innerHTML = "00000000000000000000000000";
+            textSpan.innerHTML =  originalText
         }, 2000);
 
         navigator.clipboard.writeText(addressText);

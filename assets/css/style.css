@@ -180,7 +180,7 @@ li {
 }
 
 /* media queries */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1027px) {
   .menu_drop {
     display: none;
     position: absolute;
@@ -189,7 +189,7 @@ li {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1027px) {
   .menu-button {
     display: flex;
     position: absolute;
