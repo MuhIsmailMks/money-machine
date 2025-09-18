@@ -29,6 +29,7 @@
   </head>
 
   <body class="flex justify-center">
+   
     <div
       class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-[80px] xl:gap-[110px] z-10"
     >
@@ -52,7 +53,7 @@
                   class="w-[70%] h-auto object-cover mirrorX"
                 />
               </span>
-              <p class="text-sm">Money Machine</p>
+              <p class="text-[16px] lg:text-lg">Money Machine</p>
             </div>
           </div>
 
@@ -83,12 +84,10 @@
             </ul>
           </div>
 
-          <div
-            class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"
-          >
+          <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"  >
             <a
               href="#"
-              class="w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px] bg-[#000] rounded-[10px] md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center btn_hover border-[#000] border-[1px] duration-300 text-white font-semibold hover:text-black hover:bg-white"
+              class="nav-btn relative w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px]  md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center  border-[1px] duration-300 text-black font-semibold  "
             >
               Join us
             </a>
@@ -117,17 +116,19 @@
               />
             </a>
 
-            <div class="menu-button relative">
+            <div class="nav-btn px-2 py-2 relative flex_center lg:hidden lg:absolute">
+              <div class="menu-button relative ml-1">
               <span></span>
               <span></span>
               <span></span>
+            </div>
             </div>
           </div>
         </div>
 
         <!-- menu -->
         <div
-          class="menu menu_drop nav_shadow absolute hidden top-[140%] right-[3rem] w-[190px] flex justify-center border-black border-[2px] rounded-[12px] bg-[#000] h-auto py-4 text-white"
+          class="menu menu_drop nav_shadow absolute hidden top-[200%] sm:top-[270px] right-[3rem] w-[190px] flex justify-center border-black border-[2px] rounded-[12px] bg-[#000] h-auto py-4 text-white"
         >
           <ul
             class="flex items-center relative gap-[2rem] link_none flex-col justify-center"
@@ -244,7 +245,7 @@
           class="w-[90%] md:w-[60%] xl:w-[35%] flex_center relative py-[10px] overflow-hidden"
         >
           <img
-            src="./assets/images/about.gif"
+            src="./assets/images/about.png"
             alt=""
             class="w-[96%] relative z-0"   data-aos="fade-right" data-aos-duration="900" data-aos-delay="100"
           /> 
@@ -380,6 +381,8 @@
             How To Buy
           </h2>
 
+          <img src="./assets/images/howtoimg.jpg" alt="how to img" class="w-[100%] md:w-[50%] lg:w-[20%]">
+
           <!-- how to content -->
            <div class="relative w-full flex_center gap-4 flex-wrap">
                <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="200">
@@ -496,7 +499,7 @@
           <img
             src="./assets/images/logo.png"
             alt="logo"
-            class="w-full rounded-[10px] bg-black mirrorX"
+            class="w-full rounded-[10px] bg-black"
           />
           <p class="text-white text-[19px]">Money Machine</p>
  

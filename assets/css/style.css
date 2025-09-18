@@ -67,8 +67,7 @@ li {
 
 /* menu button */
 .menu-button {
-  display: none;
-  overflow: hidden;
+  display: none; 
 
   height: 35px;
   width: 45px;
@@ -138,6 +137,34 @@ li {
 
 .link-hover:hover {
   text-decoration: underline;
+}
+
+.nav-btn::before {
+  content: "";
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
+  transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.nav-btn:hover:before {
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: perspective(40px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
+  transform: perspective(40px) rotateY(2deg) rotateX(-2deg) rotate(5deg)
+    translateX(6px) scale(1.05);
 }
 
 /* animation */
