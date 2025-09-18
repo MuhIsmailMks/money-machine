@@ -32,11 +32,12 @@
   <body class="flex justify-center">
    
     <div
-      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col pt-[40px] gap-[80px] xl:gap-[110px] z-10"
+      class="container_site w-full h-auto relative max-w-[100%]  overflow-hidden flex_center flex-col pt-[40px] gap-[80px] xl:gap-[110px] z-10"
     >
       <!-- navbar -->
       <nav
-        class="w-full z-[999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[.5rem] xl:px-[2rem]"  
+        class="w-full z-[999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[.5rem] xl:px-[2rem]"   data-aos="fade-down" data-aos-duration="900"
+        data-aos-delay="100"
       >
         <div
           class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[70%] justify-between w-full max-w-[100%] xl:max-w-[1500px] nav_shadow rounded-lg md:rounded-[30px] max-lg:px-6"
@@ -88,7 +89,7 @@
           <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"  >
             <a
               href="#"
-              class="nav-btn relative w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px]  md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center  border-[1px] duration-300 text-black font-semibold  "
+              class="nav-btn relative w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px]  md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center duration-300 text-black font-semibold  "
             >
               Join us
             </a>
@@ -187,7 +188,7 @@
             <img
             src="./assets/images/hero.png"
             alt="hero"
-            class="w-[80%] lg:w-[500px]"
+            class="w-[80%] lg:w-[500px] max-md:ml-[10%]"
           />
           </div>
           <div
@@ -204,18 +205,21 @@
             </p>
           </div>
         </div>
+ 
 
-        <div class="machine-img absolute left-[-50%] lg:left-[-20%] w-[80%] lg:w-[400px] mirrorX">
-          <img src="./assets/images/logo.png" alt="logo" class="w-full rotate-[30deg]">
-        </div>
-
-        <p class="absolute right-0 top-0 lg:top-[10%] text-[18px] lg:text-[22px]">TOKEN ERC-20</p>
+        <p class="absolute right-0 top-0 lg:top-[10%] text-[18px] lg:text-[22px]" data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-delay="100">TOKEN ERC-20</p>
 
         <div class="absolute bottom-0 w-full h-[200px flex justify-between items-center">
-          <p class="text-[13px] lg:text-[23px]">Explorador de blockchain, <br class="max-lg:hidden">analisis y servicios web</p>
+          <p class="text-[13px] lg:text-[23px]" data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-delay="100">Explorador de blockchain, <br class="max-lg:hidden">analisis y servicios web</p>
 
           <div
-            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative "
+            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative " data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-delay="100"
           >
             <div
               class="w-full h-full flex_center gap-4 z-10 relative dmsans_font"
@@ -373,7 +377,7 @@
       <!-- how to buy -->
       <section
         id="howtobuy"
-        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px] z-20 relative"
       >
         <div class="howto flex_center flex-col w-full relative gap-4 px-4">
             
@@ -382,19 +386,23 @@
             How To Buy
           </h2>
 
-          <img src="./assets/images/howtoimg.jpg" alt="how to img" class="w-[100%] md:w-[50%] lg:w-[20%]">
+          <img src="./assets/images/howtoimg.jpg" alt="how to img" class="w-[100%] md:w-[50%] lg:w-[20%] rounded-3xl" 
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="100">
 
           <!-- how to content -->
            <div class="relative w-full flex_center gap-4 flex-wrap">
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="200">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="200">
               <h3 class="w-full text-[20px] lg:text-[30px]"> STEP 1: Get Ethereum (ETH)</h3>
              Buy ETH from a centralized exchange (Binance, Coinbase, Kraken, etc.) or have it in your crypto wallet (like MetaMask).
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="300">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="300">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 2: Connect Your Wallet</h3>
             Open a DeFi platform that supports $MIM (e.g., Uniswap, Curve, or Abracadabra). Connect your wallet (MetaMask, WalletConnect, etc.).
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="400">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="400">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 3: Swap ETH for MIM</h3>
            - Choose ETH as the token you want to trade.
            <br>
@@ -402,7 +410,7 @@
            <br>
           - Enter the amount and confirm the transaction.
              </div>
-               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="500">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="500">
               <h3 class="w-full text-[20px] lg:text-[30px]">STEP 4: Confirm & Store Safely</h3>
            Once the swap is complete, $MIM will appear in your wallet. Make sure you add the official contract address to track your balance correctly.
              </div>
@@ -430,17 +438,19 @@
       </section>
 
       <!-- footer -->
-        <footer class="flex_center flex-col gap-7 relative overflow-hidden mt-[-50px]">
+        <footer class="flex_center w-full flex-col gap-7 relative mt-[-50px]  overflow-hidden">
 
         <div class="absolute top-[20%] right-[10%] rotate-12 z-10 leading-[1] flex_center text-black boldShadow "
         >   
 
-           <h4 class="mediumStroke text-[18vw] lg:text-[10vw] float_animation mt-[-50px]">$MIM</h4>
+           <h4 class="mediumStroke text-[40px] lg:text-[120px] float_animation mt-[-50px]" > <span data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="100">$MIM</span> </h4>
          
         </div>
          
         <!-- image -->
-         <div class="images z-30 w-full h-auto relative flex_center flex-col max-lg:mt-[6rem]">
+         <div class="images z-30 w-full max-w-[1500px] h-auto relative flex_center flex-col max-lg:mt-[6rem]">
 
           <div class="flex_center w-full">
             <img src="assets/images/hero.png" alt="characterHero" class="w-[60%] md:w-[30%] lg:w-[28%] h-auto shake_animation">
@@ -568,14 +578,9 @@
     <!-- bg -->
     <div class="w-full h-full fixed left-0 top-0 bg-[#fff]">
 
-         <div class="blinks absolute left-0 top-0 w-full h-full z-[1]">
-
-          <div class="stars-container"> 
-          </div>
-    
-         </div>
-
-         <div class="absolute z-10 left-[9%] top-[8%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -1s;">
+         <img src="./assets/images/bgtexture.jpg" alt="texture" class="absolute left-0 top-0 w-full h-full object-cover opacity-30">
+ 
+         <div class="absolute  left-[9%] top-[8%] w-[20%] xl:w-[150px] float_animation z-10" style="animation-delay: -1s;">
           <img src="./assets/images/hero.png" alt="" class="w-full opacity-25 rotate-12 ">
          </div>
          <div class="absolute z-10 right-[16%] top-[15%] w-[20%] xl:w-[150px] float_animation" style="animation-delay: -1.5s;">

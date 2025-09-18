@@ -190,28 +190,8 @@ li {
     transform: translatey(0px);
   }
 }
-
-.stars-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.star {
-  position: absolute;
-  opacity: 0;
-  animation: twinkle 2s infinite alternate;
-}
-
-/* Animasi opacity */
-@keyframes twinkle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+ 
+ 
 
 /* media queries */
 @media screen and (min-width: 1027px) {
