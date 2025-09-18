@@ -49,12 +49,12 @@
 }
 
 .item h4 {
-  font-size: 51px;
+  font-size: 40px;
   text-transform: uppercase;
   animation: text_animation 1s ease-in-out infinite;
 
-  color: white;
-  -webkit-text-stroke: 1.5px black;
+  color: black;
+  /* -webkit-text-stroke: 1.5px black; */
 }
 
 .slide-container.footer_slide h4 {

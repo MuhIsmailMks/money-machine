@@ -3,7 +3,14 @@ html {
 }
 
 @font-face {
-  font-family: 'MilkyNice';  
+  font-family: 'segoepr';  
+  src: url('../font/segoepr.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'milkynice';  
   src: url('../font/MilkyNice-Clean.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
@@ -11,12 +18,12 @@ html {
 
 
 body {
-  font-family: "MilkyNice", sans-serif;
+  font-family: "segoepr", sans-serif;
   font-weight: 600;
 }
 
-.dmsans_font {
-  font-family: "MilkyNice", sans-serif;
+.milkynice {
+  font-family: "milkynice", sans-serif;
 }
 
 .flex_center {
